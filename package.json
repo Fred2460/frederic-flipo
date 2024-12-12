@@ -2,7 +2,7 @@
   "name": "frederic.flipo",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://Fred2460.github.io/fred.flipo",
+  "homepage": "https://Fred2460.github.io/#homepage",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
