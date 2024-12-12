@@ -58,8 +58,8 @@ function Accueil({ projets }) {
       </Helmet>
 
       {/* section Accueil haut de page */}
-      <section className="welcome" id="welcome" role="banner" aria-labelledby="Entête Accueil">
-        <Element name="welcome"></Element>
+      <section className="welcome" id="homepage" role="banner" aria-labelledby="Entête Accueil">
+        <Element name="homepage"></Element>
         <span className="welcome__block1"></span>
         <span className="welcome__block2"></span>
         <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" aria-label="Accueil - Image d'un paysage de montagne" />
@@ -68,9 +68,11 @@ function Accueil({ projets }) {
           <div className="welcome__container__ident">
             <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" aria-label="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
-              <h2 className="welcome__container__ident--sub--text1">Frédéric FLIPO</h2>  
-              <h3 className="welcome__container__ident--sub--text2">Développeur Web</h3>
-              <p className="block__text">Freelance</p>
+              <div  className="welcome__container__ident--sub--sub2">
+                <h2 className="welcome__container__ident--sub--sub2--texth2">Frédéric FLIPO</h2>  
+                <h3 className="welcome__container__ident--sub--sub2--texth3">Développeur Web</h3>
+              </div>
+              <h4 className="welcome__container__ident--sub--texth4">- Freelance -</h4>
             </div>
           </div>         
         </div>

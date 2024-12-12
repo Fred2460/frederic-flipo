@@ -177,14 +177,14 @@
 
   &__container {
     position: absolute;
-    top: 126px;
-    left: 35vw;
+    //top: 126px;
+    left: 25vw;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: right;
-    width: 55vw;
+    width: 65vw;
     height: 40vw;
     z-index: 3;
 
@@ -221,41 +221,67 @@
       &--sub {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;        
+      
+        &--sub2 {
+          justify-content: center;
+
+          &--texth2 {
+            color: $secondaryT-color;
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin: 5px 0px 0px 10px;
+
+            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+              font-size: 20px;
+              margin: 3px 0px 0px 5px;
+            }
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 13px;
+              margin: 0px 0px 0px 0px;
+            }
+          }
         
-        &--text1 {
+          &--texth3 {
+            color: $secondaryT-color;
+            font-size: 24px;
+            font-style: italic;
+            margin: 0px 0px 5px 10px;
+
+            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+              font-size: 16px;
+              margin: 0px 0px 0px 5px;
+            }
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 11px;
+              margin: 0px 0px 0px 0px;
+            }
+          }
+        }
+      
+        &--texth4 {
+          font-family: $font-family-base;
           color: $secondaryT-color;
-          font-size: 30px;
-          letter-spacing: 2px;
-          margin: 5px 0px 0px 10px;
+          background-color: unset;
+          padding: 0 40px 0 0;
+          margin: 0;
+          font-size: 20px;
 
           @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            font-size: 20px;
-            margin: 3px 0px 0px 5px;
-          }
-            
-          @media (max-width: $breakpoint-mobile) {
-            font-size: 13px;
-            margin: 0px 0px 0px 0px;
-          }
-        }
-  
-        &--text2 {
-          color: $secondaryT-color;
-          font-size: 24px;
-          font-style: italic;
-          margin: 0px 0px 5px 10px;
-          
-          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             font-size: 16px;
-            margin: 0px 0px 0px 5px;
+            padding: 0 25px 0 0;
           }
             
           @media (max-width: $breakpoint-mobile) {
-            font-size: 11px;
-            margin: 0px 0px 0px 0px;
+            font-size: 12px;
+            padding: 0 15px 0 0;
           }
         }
+      
+      
+      
       }
     }
   }
@@ -267,18 +293,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 45px;
+  padding: 40px;
 
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    padding: 30px;
+    padding: 25px;
   }
     
   @media (max-width: $breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    padding: 15px;
+    padding: 10px;
   }
 
   &__block {
@@ -407,20 +433,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 45px;
+  padding: 40px;
   border-radius: 25px;
   background-color: $secondaryB-color;
 
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 20px;
+    gap: 20px;
+    padding: 25px;
     margin-top: 30px;
   }
     
   @media (max-width: $breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
+    gap: 10px;
     padding: 15px;
     margin-top: 15px;
   }
@@ -431,25 +457,20 @@
     flex-direction: column;
     justify-content: end;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 4;
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid $blockB-color;
     gap: 5px;
 
-    /*
-    &--overlay {
-      position: absolute;
-      border-radius: 10px;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
-      z-index: 1; 
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      aspect-ratio: 2 / 3;
     }
-*/
+      
+    @media (max-width: $breakpoint-mobile) {
+      aspect-ratio: 1 / 1;
+    }
 
     &__content {
       display: grid;
@@ -468,6 +489,7 @@
         border-radius: 4px 4px 0 0;
         font-size: 18px;
         font-weight: 500;
+        height: 100%;
         margin: 0;
         padding: 5px 5px 10px 5px;
         text-align: center;
@@ -479,36 +501,46 @@
         height: 100%;
         object-fit: contain;
         background-color: white;
+        align-self: center;
         padding: 3px;
-        border-bottom: 1px solid $blockB-color;
         z-index: 0;
       }
 
       &--taglist {
-        padding: 5px 0 0 0;
-        margin: 5px;
+        padding: 0;
+        height: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 10px 5px 5px 5px;
         gap: 5px;
-      }
 
-      &--tags {
-        display: inline-flex;
-        color: $blockT-color;
-        background-color: $blockB-color;
-        border-radius: 15px;
-        padding: 5px 10px;
-        font-size: 14px;
-        font-weight: 500;
-        list-style: none;
-        z-index: 3;
+        &--tags {
+          display: inline-flex;
+          color: $blockT-color;
+          background-color: $blockB-color;
+          border-radius: 15px;
+          padding: 5px 10px;
+          font-size: 12px;
+          font-weight: 500;
+          list-style: none;
+          z-index: 3;
+
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 11px;
+          }
+            
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 10px;
+          }
+        }
       }
     }
   }
 }
 
+/* ****************** Compétences ********************** */
 .skillsContainer {
   display: flex;
   flex-direction: row;
@@ -517,6 +549,14 @@
   width: 100%;
   padding: 10px;
   gap: 50px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    gap: 30px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    gap: 15px;
+  }
 
   &__item {
     display: flex;
@@ -530,20 +570,31 @@
     object-fit: contain;
 
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-      width: 64px;
-      height: 64px;
+      width: 60px;
+      height: 60px;
     }
       
     @media (max-width: $breakpoint-mobile) {
-      width: 52px;
-      height: 52px;
+      width: 45px;
+      height: 45px;
     }
   }
 
   &__title {
     margin: 10px;
     color: $secondaryT-color;
+    font-size: 16px;
     font-weight: 700;
+    
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 14px;
+      margin: 8px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px;
+      margin: 5px;
+    }
   }
 }
 

@@ -52,7 +52,7 @@
 	},
 	{
 		"id": "46d188c5",
-		"title": "Débug et optimisation du site du photographe N.Carducci",
+		"title": "Optimisation du site du photographe N.Carducci",
 		"cover": "nina_cover.png",
 		"pictures": [
 			"nina_principale.png",
@@ -98,7 +98,6 @@
 			"React",
 			"React Router",
 			"SaSS/SCSS",
-			"Javascript",
 			"Node.js",
 			"données JSON"
 		],

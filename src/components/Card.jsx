@@ -23,7 +23,7 @@ function Card({ id = "", title = "", cover = "", tags }) {
         <ul className="gallery__card__content--taglist">
           {(tags && tags.length >0) ? (
             tags.map((tag, index) => (
-            <li key={index} className={tag !== undefined ? 'gallery__card__content--tags' : ''}>
+            <li key={index} className={tag !== undefined ? 'gallery__card__content--taglist--tags' : ''}>
               {tag}
             </li>))
             ) : (

@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='navCont'>
         <div className='navCont__block' role="region" aria-roledescription= "Menu de navigation principale" aria-label="Liens de navigation">
-          <NavLink className='navCont__block--link' aria-label="Retourner au début de la page d'accueil" to="/#welcome">Accueil</NavLink>
+          <NavLink className='navCont__block--link' aria-label="Retourner au début de la page d'accueil" to="/#homepage">Accueil</NavLink>
           <NavLink className='navCont__block--link' aria-label="Aller à la section services" to="/#services">Services</NavLink>
           <NavLink className='navCont__block--link' aria-label="Aller à la section portfolio" to="/#portfolio">Portfolio</NavLink>
           <NavLink className='navCont__block--link' aria-label="Aller à la section compétences" to="/#competences">Compétences</NavLink>
