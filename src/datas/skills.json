@@ -1,0 +1,86 @@
+[
+	{
+		"id": "a1001",
+		"title": "HTML 5",
+		"logo": "html5.png",
+        "type": "1"
+	},
+    {
+        "id": "a1002",
+        "title": "CSS 3",
+        "logo": "css3.png",
+        "type": "1"
+    },
+    {
+        "id": "a1003",
+        "title": "JavaScript",
+        "logo": "js.png",
+        "type": "1"
+    },
+    {
+        "id": "a1004",
+        "title": "Node.js",
+        "logo": "node-js.png",
+        "type": "1"
+    },
+    {
+        "id": "a1005",
+        "title": "express.js",
+        "logo": "express.png",
+        "type": "1"
+    },
+    {
+        "id": "a1006",
+        "title": "API REST",
+        "logo": "api_rest.png",
+        "type": "1"
+    },
+    {
+        "id": "a1007",
+        "title": "React",
+        "logo": "react.png",
+        "type": "1"
+    },
+    {
+        "id": "a1008",
+        "title": "Sass",
+        "logo": "sass.png",
+        "type": "1"
+    },
+    {
+        "id": "a1009",
+        "title": "Git",
+        "logo": "git.png",
+        "type": "2"
+    },
+    {
+        "id": "a1010",
+        "title": "GitHub",
+        "logo": "github.png",
+        "type": "2"
+    },
+    {
+        "id": "a1011",
+        "title": "Google Lighthouse",
+        "logo": "lighthouse.png",
+        "type": "2"
+    },
+    {
+        "id": "a1012",
+        "title": "axe DevTools",
+        "logo": "axe_devtools.png",
+        "type": "2"
+    },
+    {
+        "id": "a1013",
+        "title": "Schema.org",
+        "logo": "schema.org.png",
+        "type": "2"
+    },
+    {
+        "id": "a1014",
+        "title": "W3C WAI",
+        "logo": "w3c_wai.png",
+        "type": "2"
+    }
+]

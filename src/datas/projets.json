@@ -1,0 +1,164 @@
+[
+	{
+		"id": "c67ab8a7",
+		"title": "Interface de l’agence de voyage Booki",
+		"cover": "booki_cover.png",
+		"pictures": [
+			"booki_principale.png",
+			"booki_filtres.png",
+			"booki_activites.png",
+			"booki_mobile.png",
+			"booki_figma.png"
+		],
+		"description": "Développer l’interface Responsive de l’agence de voyage Booki",
+		"theme": "Intégration web avec HTML & CSS",
+		"equipments": [
+			"Intégrer du contenu conformément à une maquette Figma avec HTML et CSS",
+			"Implémenter une interface responsive avec HTML et CSS"
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Figma"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet2_Agence-Booki.git"
+	},
+	{
+		"id": "b9123946",
+		"title": "Page web pour l’architecte Sophie Bluel",
+		"cover": "bluel_cover.png",
+		"pictures": [
+			"bluel_principale.png",
+			"bluel_filtre.png",
+			"bluel_contact.png",
+			"bluel_login_signup.png",
+			"bluel_galerie.png",
+			"bluel_ajout.png"
+		],
+		"description": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
+		"theme": "Développement web avec JavaScript",
+		"equipments": [
+			"Gérer la page de connexion pour l’administration du site et récupérer les données utilisateurs dans le JavaScript via des formulaires",
+			"Manipuler les éléments du DOM avec JavaScript",
+			"Gérer les événements utilisateurs avec JavaScript et upload de nouveaux medias"
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Javascript",
+			"Figma"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet3_Architecte-Sophie-Bluel.git"
+	},
+	{
+		"id": "46d188c5",
+		"title": "Débug et optimisation du site du photographe N.Carducci",
+		"cover": "nina_cover.png",
+		"pictures": [
+			"nina_principale.png",
+			"nina_galerie1.png",
+			"nina_galerie2.png",
+			"nina_perf.png",
+			"nina_acc.png",
+			"nina_contrast.png"
+		],
+		"description": "Optimiser la performance d’un site, son accessibilité, ses meilleures pratiques et son référencement naturel SEO",
+		"theme": "Optimisation et débug d’un site web",
+		"equipments": [
+			"Optimiser les performances d’utilisation d’un site web",
+			"Débugger un site grâce aux Chrome DevTools",
+			"Améliorer l’accessibilité d’un site et intégrer le code ARIA",
+			"Intégrer le référencement local avec Schema.org"
+		],
+		"tags": [
+			"Lighthouse",
+			"Wave",
+			"axe DevTools",
+			"Schema.org"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet4_Nina-Carducci.git"
+	},
+	{
+		"id": "7af00cd6",
+		"title": "Agence de location immobilière Kasa",
+		"cover": "kasa_cover.png",
+		"pictures": [
+			"kasa_principale.png",
+			"kasa_apropos.png",
+			"kasa_logement.png"
+		],
+		"description": "Créer avec React l’application web de l’agence de location immobilière Kasa",
+		"theme": "Développement web avec React",
+		"equipments": [
+			"Initialiser une application avec Create React App",
+			"Configurer la navigation entre les pages de l'application avec React Router",
+			"Développer des éléments de l'interface d'un site web grâce à des composants React"
+		],
+		"tags": [
+			"React",
+			"React Router",
+			"SaSS/SCSS",
+			"Javascript",
+			"Node.js",
+			"données JSON"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet5_Kasa.git"
+	},
+	{
+		"id": "cb02d69b",
+		"title": "Site de notation de livres Vieux Grimoire",
+		"cover": "vieux-grimoire_cover.png",
+		"pictures": [
+			"vieux-grimoire_principale.png",
+			"vieux-grimoire_login_signup.png",
+			"vieux-grimoire_modif_suppr.png",
+			"vieux-grimoire_rating.png",
+			"vieux-grimoire_top3_rating.png",
+			"vieux-grimoire_mongodb_atlas.png"
+		],
+		"description": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
+		"theme": "Développement back-end avec NodeJS",
+		"equipments": [
+			"Implémenter un modèle logique de données avec une architecture MVC (Modèle-Vue-Contrôleur) avec Mongoose",
+			"Mettre en œuvre des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) de manière sécurisée",
+			"Stocker les données dans une base NoSQL de manière sécurisée",
+			"Appliquer les bonnes pratiques du Green Code pour réduire l'empreinte écologique du site"
+		],
+		"tags": [
+			"Node.js",
+			"Express.js",
+			"Base NoSQL",
+			"Architecture MVC",
+			"API RESTful"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet6_Vieux-Grimoire.git"
+	},
+	{
+		"id": "0979876d",
+		"title": "Organisation projet de développement web Menu Maker",
+		"cover": "menu_maker_cover.png",
+		"pictures": [
+			"menu_maker_maquette1.png",
+			"menu_maker_maquette2.png",
+			"menu_maker_notion_backlog.png",
+			"menu_maker_notion_planning.png"
+		],
+		"description": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
+		"theme": "Gestion de projet et outils de développement",
+		"equipments": [
+			"Suivre le déroulement du projet grâce à un outil de gestion de projet",
+			"Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+			"Découper des fonctionnalités en tâches pour préparer le développement",
+			"Présenter la solution technique",
+			"Installer un environnement de développement front-end",
+			"Mettre en place une méthode de veille technologique"
+		],
+		"tags": [
+			"Méthode Agile",
+			"SCRUM",
+			"Kanban",
+			"Notion©"
+		],
+		"lien": ""
+	}
+]

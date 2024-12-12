@@ -1,0 +1,17 @@
+/* ****************** Style pour index.js ********************** */
+
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  //border: 1px dashed red; /* Pour visualiser où les tailles diffèrent */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Montserrat', 'Poppins',
+    sans-serif ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

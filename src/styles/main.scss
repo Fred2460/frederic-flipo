@@ -1,0 +1,638 @@
+/* ****************** Style pour les pages ACCUEIL, A-PROPOS, ERREUR et composant BLOCK ********************** */
+
+@import 'variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+  margin-bottom: 50px;
+  gap: 50px;
+  font-family: $font-family-base;
+  background-color: $primaryB-color;
+  
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    gap: 35px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: 25px;
+  }
+}
+
+
+/* ****************** blocs page d'accueil ********************** */
+.block {
+  margin: 0px 100px 0px 100px;
+  text-align: center;
+  background-color: $secondaryB-color;
+  padding: 60px 30px 30px 30px;
+  border-radius: 5px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    margin: 0px 50px 0px 50px;
+    padding: 50px 24px 24px 24px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0px 20px 0px 20px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: $secondaryT-color;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 16px;
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+  
+    &--h1 {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 46px;
+      font-weight: 700;
+      color: $secondaryT-color;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        letter-spacing: 8px;
+        font-size: 36px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        letter-spacing: 6px;
+        font-size: 28px;
+      }
+    }
+
+    &--h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $secondaryT-color;
+      text-align: center;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 18px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__line {
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+    background: $secondaryT-color;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      width: 44px;
+      margin: 24px auto;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      width: 35px;
+      margin: 18px auto;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    color: $secondaryT-color;
+    background-color: $secondaryB-color;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 20px;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 16px;
+      padding: 25px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px;
+      padding: 20px;
+    }
+  }
+}
+
+
+/* image d'accueil */
+.welcome {
+  margin: 0px 100px 0px 0px;
+  padding-top: 76px;
+  display: flex;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    margin: 0px 50px 0px 0px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0px 20px 0px 0px;
+  }
+
+  &__block1 {
+    width: 20vw;
+    height: 20vw;
+    aspect-ratio: 1 / 1;
+    background-color: $blockB-color;
+    z-index: 0;
+  }
+
+  &__block2 {
+    width: 70vw;
+    height: 45vw;
+    background-color: $secondaryB-color;
+    margin-left: 40px;
+    padding: 40px;
+    z-index: 1;
+  }
+
+  &__pictureAccueil {
+    position: absolute;
+    top: 192px;
+    left: 40px;
+    width: 50vw;
+    height: auto;
+    z-index: 2;
+  }
+
+  &__container {
+    position: absolute;
+    top: 126px;
+    left: 35vw;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    width: 55vw;
+    height: 40vw;
+    z-index: 3;
+
+    &--banner {
+      color: $primaryT-color;
+      font-size: 55px;
+      margin-bottom: 10px;
+      
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+    }
+
+    &__ident {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      &--pictureProfile {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 20vw;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+        z-index: 4;
+      }
+
+      &--sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &--text1 {
+          color: $secondaryT-color;
+          font-size: 30px;
+          letter-spacing: 2px;
+          margin: 5px 0px 0px 10px;
+
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 20px;
+            margin: 3px 0px 0px 5px;
+          }
+            
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+            margin: 0px 0px 0px 0px;
+          }
+        }
+  
+        &--text2 {
+          color: $secondaryT-color;
+          font-size: 24px;
+          font-style: italic;
+          margin: 0px 0px 5px 10px;
+          
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 16px;
+            margin: 0px 0px 0px 5px;
+          }
+            
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 11px;
+            margin: 0px 0px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ****************** services ************************ */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 45px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 15px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: $primaryB-color;
+    box-shadow: 10px 5px 5px $blockB-color;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    &--icone {
+      justify-content: start;
+      font-size: 50px;
+      color: $blockB-color;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 40px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+      }
+    }
+
+    &--title {
+      font-size: 22px;
+      color: $primaryT-color;
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 18px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 16px;
+      }
+    }
+    
+    &--texth4 {
+      font-size: 20px;
+      color: $secondaryB-color;
+      background-color: $blockB-color;
+      opacity: 0.9;
+      margin: 5px 0 5px 0;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 16px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 13px;
+      }
+    }
+
+    &--text {
+      font-size: 16px;
+      color: $secondaryT-color;
+      margin-top: 5px;
+      margin-bottom: 10px;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 14px;
+        margin-bottom: 7px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
+      &--B {
+        color: $secondaryT-color;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          font-size: 14px;
+          margin-bottom: 7px;
+        }
+          
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .services__block--text,
+    .services__block--text--B {
+      display: none;
+    }
+
+    &.active {
+      .services__block--text,
+      .services__block--text--B {
+        display: block;
+        animation: fadeIn 0.3s ease-in;
+      }
+    }
+  }
+}
+
+// Animation pour l'apparition du texte
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ****************** galerie portfolio ********************** */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 45px;
+  border-radius: 25px;
+  background-color: $secondaryB-color;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid $blockB-color;
+    gap: 5px;
+
+    /*
+    &--overlay {
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+      z-index: 1; 
+    }
+*/
+
+    &__content {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+
+      &--title {
+        align-items: center;
+        justify-content: center;
+        color: $blockT-color;
+        background-color: $blockB-color;
+        opacity: 0.9;
+        border-radius: 4px 4px 0 0;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        padding: 5px 5px 10px 5px;
+        text-align: center;
+        z-index: 2;
+      }
+
+      &--cover {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: white;
+        padding: 3px;
+        border-bottom: 1px solid $blockB-color;
+        z-index: 0;
+      }
+
+      &--taglist {
+        padding: 5px 0 0 0;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      &--tags {
+        display: inline-flex;
+        color: $blockT-color;
+        background-color: $blockB-color;
+        border-radius: 15px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        list-style: none;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  gap: 50px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      width: 64px;
+      height: 64px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &__title {
+    margin: 10px;
+    color: $secondaryT-color;
+    font-weight: 700;
+  }
+}
+
+
+/* ****************** Style pour la page A-PROPOS ********************** */
+.apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 120px 40px 120px;
+    gap: 30px;
+  
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      margin: 30px 60px 30px 60px;
+      gap: 30px;
+    }
+  
+    @media (max-width: $breakpoint-mobile) {
+      margin: 25px 0 25px 0;
+      gap: 25px;
+    }
+  }
+
+  /* ****************** Style pour la page ERREUR ********************** */
+
+.errorMain {
+  align-items: center;
+  color: $primaryT-color;
+  margin: 50px;
+  gap: 90px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    gap: 70px;
+  }
+  
+  @media (max-width: $breakpoint-mobile) {
+    gap: 50px ;
+  }
+
+  &__H1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 192px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 96px ;
+    }
+  }
+
+  &__H2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 18px ;
+    }
+  }
+
+  &__Link {
+    font-size: 18px;
+    font-weight: 500;
+    color: $secondaryT-color;
+    text-decoration: underline;
+    margin-bottom: 50px;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px ;
+    }
+  }
+}
