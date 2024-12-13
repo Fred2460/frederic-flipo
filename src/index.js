@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Routes, Route } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import APropos from './pages/APropos'
 import FProjet from './pages/FProjet'
@@ -26,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <GlobalStyle />
       <ScrollToTop />
       <Header />
@@ -37,6 +39,6 @@ root.render(
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   </React.StrictMode>
 );
