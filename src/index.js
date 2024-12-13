@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.NODE_ENV === "production" ? "/fred.flipo" : "/"}>
       <GlobalStyle />
       <ScrollToTop />
       <Header />

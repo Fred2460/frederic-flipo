@@ -10,11 +10,9 @@
   gap: 50px;
   font-family: $font-family-base;
   background-color: $primaryB-color;
-  
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     gap: 35px;
   }
-
   @media (max-width: $breakpoint-mobile) {
     gap: 25px;
   }
@@ -28,12 +26,10 @@
   background-color: $secondaryB-color;
   padding: 60px 30px 30px 30px;
   border-radius: 5px;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     margin: 0px 50px 0px 50px;
     padding: 50px 24px 24px 24px;
   }
-    
   @media (max-width: $breakpoint-mobile) {
     margin: 0px 20px 0px 20px;
     padding: 40px 20px 20px 20px;
@@ -47,13 +43,11 @@
     margin-bottom: 40px;
     font-weight: 500;
     color: $secondaryT-color;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 20px;
       margin-top: 32px;
       margin-bottom: 32px;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       font-size: 16px;
       margin-top: 26px;
@@ -66,15 +60,13 @@
       font-size: 46px;
       font-weight: 700;
       color: $secondaryT-color;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         letter-spacing: 8px;
         font-size: 36px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
-        letter-spacing: 6px;
-        font-size: 28px;
+        letter-spacing: 5px;
+        font-size: 24px;
       }
     }
 
@@ -86,11 +78,9 @@
       margin-bottom: 0;
       color: $secondaryT-color;
       text-align: center;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 18px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
         font-size: 12px;
       }
@@ -102,12 +92,10 @@
     height: 1px;
     margin: 30px auto;
     background: $secondaryT-color;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       width: 44px;
       margin: 24px auto;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       width: 35px;
       margin: 18px auto;
@@ -121,12 +109,10 @@
     border-radius: 5px;
     padding: 30px;
     font-size: 20px;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 16px;
       padding: 25px;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       font-size: 12px;
       padding: 20px;
@@ -140,11 +126,9 @@
   margin: 0px 100px 0px 0px;
   padding-top: 76px;
   display: flex;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     margin: 0px 50px 0px 0px;
   }
-
   @media (max-width: $breakpoint-mobile) {
     margin: 0px 20px 0px 0px;
   }
@@ -158,12 +142,17 @@
   }
 
   &__block2 {
-    width: 70vw;
+    width: 75vw;
     height: 45vw;
     background-color: $secondaryB-color;
     margin-left: 40px;
-    padding: 40px;
     z-index: 1;
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      margin-left: 30px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      margin-left: 20px;
+    }
   }
 
   &__pictureAccueil {
@@ -177,7 +166,6 @@
 
   &__container {
     position: absolute;
-    //top: 126px;
     left: 25vw;
     padding-right: 10px;
     display: flex;
@@ -189,17 +177,15 @@
     z-index: 3;
 
     &--banner {
-      color: $primaryT-color;
-      font-size: 55px;
+      color: $secondaryT-color;
+      font-size: 50px;
       margin-bottom: 10px;
-      
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-        font-size: 36px;
+        font-size: 30px;
         margin-bottom: 5px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
-        font-size: 24px;
+        font-size: 15px;
         margin-bottom: 0px;
       }
     }
@@ -221,10 +207,10 @@
       &--sub {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;        
+        justify-content: center;
+        color: $primaryT-color;
 
         &--texth2 {
-          color: $secondaryT-color;
           font-size: 30px;
           letter-spacing: 2px;
           margin: 5px 0px 0px 10px;
@@ -233,13 +219,12 @@
             margin: 3px 0px 0px 5px;
           }
           @media (max-width: $breakpoint-mobile) {
-            font-size: 13px;
+            font-size: 12px;
             margin: 0px 0px 0px 0px;
           }
         }
       
         &--texth3 {
-          color: $secondaryT-color;
           font-size: 24px;
           font-style: italic;
           margin: 0px 0px 5px 10px;
@@ -248,7 +233,7 @@
             margin: 0px 0px 0px 5px;
           }
           @media (max-width: $breakpoint-mobile) {
-            font-size: 11px;
+            font-size: 10px;
             margin: 0px 0px 0px 0px;
           }
         }
@@ -264,13 +249,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 40px;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 25px;
   }
-    
   @media (max-width: $breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -291,11 +274,9 @@
       justify-content: start;
       font-size: 50px;
       color: $blockB-color;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 40px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
         font-size: 32px;
       }
@@ -306,11 +287,9 @@
       color: $primaryT-color;
       margin-top: 0;
       margin-bottom: 10px;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 18px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
         font-size: 16px;
       }
@@ -325,11 +304,9 @@
       border-radius: 5px;
       padding: 5px;
       text-align: center;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 16px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
         font-size: 13px;
       }
@@ -340,12 +317,10 @@
       color: $secondaryT-color;
       margin-top: 5px;
       margin-bottom: 10px;
-
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 14px;
         margin-bottom: 7px;
       }
-        
       @media (max-width: $breakpoint-mobile) {
         font-size: 12px;
         margin-bottom: 4px;
@@ -358,12 +333,10 @@
         text-align: center;
         margin-top: 0;
         margin-bottom: 10px;
-
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
           font-size: 14px;
           margin-bottom: 7px;
         }
-          
         @media (max-width: $breakpoint-mobile) {
           font-size: 12px;
           margin-bottom: 4px;
@@ -406,14 +379,12 @@
   padding: 40px;
   border-radius: 25px;
   background-color: $secondaryB-color;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 25px;
     margin-top: 30px;
   }
-    
   @media (max-width: $breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
@@ -433,11 +404,9 @@
     border-radius: 10px;
     border: 2px solid $blockB-color;
     gap: 5px;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       aspect-ratio: 2 / 3;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       aspect-ratio: 1 / 1;
     }
@@ -464,13 +433,19 @@
         padding: 5px 5px 10px 5px;
         text-align: center;
         z-index: 2;
+        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          font-size: 14px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 10px;
+        }
       }
 
       &--cover {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        background-color: white;
+        background-color: unset;
         align-self: center;
         padding: 3px;
         z-index: 0;
@@ -496,13 +471,11 @@
           font-weight: 500;
           list-style: none;
           z-index: 3;
-
           @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            font-size: 11px;
-          }
-            
-          @media (max-width: $breakpoint-mobile) {
             font-size: 10px;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 8px;
           }
         }
       }
@@ -519,11 +492,9 @@
   width: 100%;
   padding: 10px;
   gap: 50px;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     gap: 30px;
   }
-    
   @media (max-width: $breakpoint-mobile) {
     gap: 15px;
   }
@@ -538,12 +509,10 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       width: 60px;
       height: 60px;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       width: 45px;
       height: 45px;
@@ -555,12 +524,10 @@
     color: $secondaryT-color;
     font-size: 16px;
     font-weight: 700;
-    
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 14px;
       margin: 8px;
     }
-      
     @media (max-width: $breakpoint-mobile) {
       font-size: 12px;
       margin: 5px;
@@ -584,12 +551,10 @@
     justify-content: center;
     margin: 0 120px 40px 120px;
     gap: 30px;
-  
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       margin: 30px 60px 30px 60px;
       gap: 30px;
     }
-  
     @media (max-width: $breakpoint-mobile) {
       margin: 25px 0 25px 0;
       gap: 25px;
@@ -603,11 +568,9 @@
   color: $primaryT-color;
   margin: 50px;
   gap: 90px;
-
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     gap: 70px;
   }
-  
   @media (max-width: $breakpoint-mobile) {
     gap: 50px ;
   }
@@ -617,11 +580,9 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 192px;
     }
-
     @media (max-width: $breakpoint-mobile) {
       font-size: 96px ;
     }
@@ -631,11 +592,9 @@
     font-size: 36px;
     font-weight: 500;
     text-align: center;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 24px;
     }
-
     @media (max-width: $breakpoint-mobile) {
       font-size: 18px ;
     }
@@ -647,11 +606,9 @@
     color: $secondaryT-color;
     text-decoration: underline;
     margin-bottom: 50px;
-
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 16px;
     }
-
     @media (max-width: $breakpoint-mobile) {
       font-size: 14px ;
     }

@@ -29,12 +29,10 @@
         border: none;
         padding: 20px;
         cursor: pointer;
-
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             width: 60px;
             padding: 10px;
         }
-            
         @media (max-width: $breakpoint-mobile) {
             width: 24px;
             padding: 5px;
@@ -46,7 +44,6 @@
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             left: -17px;
         }
-            
         @media (max-width: $breakpoint-mobile) {
             left: -5px;
         }
@@ -57,7 +54,6 @@
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             right: -10px;
         }
-            
         @media (max-width: $breakpoint-mobile) {
             right: 0px;
         }
@@ -86,12 +82,10 @@
         opacity: 0.4;
         padding: 5px 10px 5px 10px;
         border-radius: 5px;
-
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             font-size: 14px;
             padding: 4px 8px 4px 8px;
         }
-            
         @media (max-width: $breakpoint-mobile) {
             font-size: 11px;
             padding: 3px 5px 3px 5px;

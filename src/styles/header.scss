@@ -21,12 +21,10 @@
         padding-left: 30px;
         padding-right: 30px;
         cursor: pointer;
-
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
           padding-left: 20px;
           padding-right: 20px;
         }
-
         @media (max-width: $breakpoint-mobile) {
           padding-left: 10px;
           padding-right: 10px;
@@ -40,6 +38,14 @@
           font-weight: 500;
           text-align: center;
           padding: 25px 10px 25px 10px;
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            padding: 20px 8px 20px 8px;
+            font-size: 12px;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            padding: 10px 5px 10px 5px;
+            font-size: 10px;
+          }
 
           &:hover {
             background-color: $secondaryB-color;
@@ -47,15 +53,6 @@
 
           &:active {
             background-color: $secondaryB-color;
-          }
-
-          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            padding: 20px 8px 20px 8px;
-            font-size: 12px;
-          }
-          @media (max-width: $breakpoint-mobile) {
-            padding: 15px 5px 15px 5px;
-            font-size: 10px;
           }
       }
 
@@ -69,8 +66,8 @@
         align-items: center;
         text-decoration: none;
         padding: 4px 10px 4px 10px;
+        margin-left: 5px;
         border-radius: 10px;
-        
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
           padding: 4px 10px 4px 10px;
           font-size: 12px;
