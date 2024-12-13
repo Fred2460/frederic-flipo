@@ -68,11 +68,8 @@ function Accueil({ projets }) {
           <div className="welcome__container__ident">
             <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" aria-label="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
-              <div  className="welcome__container__ident--sub--sub2">
-                <h2 className="welcome__container__ident--sub--sub2--texth2">Frédéric FLIPO</h2>  
-                <h3 className="welcome__container__ident--sub--sub2--texth3">Développeur Web</h3>
-              </div>
-              <h4 className="welcome__container__ident--sub--texth4">- Freelance -</h4>
+                <h2 className="welcome__container__ident--sub--texth2">Frédéric FLIPO</h2>  
+                <h3 className="welcome__container__ident--sub--texth3">Développeur Web</h3>
             </div>
           </div>         
         </div>

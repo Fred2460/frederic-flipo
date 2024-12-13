@@ -222,66 +222,36 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;        
-      
-        &--sub2 {
-          justify-content: center;
 
-          &--texth2 {
-            color: $secondaryT-color;
-            font-size: 30px;
-            letter-spacing: 2px;
-            margin: 5px 0px 0px 10px;
-
-            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-              font-size: 20px;
-              margin: 3px 0px 0px 5px;
-            }
-
-            @media (max-width: $breakpoint-mobile) {
-              font-size: 13px;
-              margin: 0px 0px 0px 0px;
-            }
+        &--texth2 {
+          color: $secondaryT-color;
+          font-size: 30px;
+          letter-spacing: 2px;
+          margin: 5px 0px 0px 10px;
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 20px;
+            margin: 3px 0px 0px 5px;
           }
-        
-          &--texth3 {
-            color: $secondaryT-color;
-            font-size: 24px;
-            font-style: italic;
-            margin: 0px 0px 5px 10px;
-
-            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-              font-size: 16px;
-              margin: 0px 0px 0px 5px;
-            }
-
-            @media (max-width: $breakpoint-mobile) {
-              font-size: 11px;
-              margin: 0px 0px 0px 0px;
-            }
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+            margin: 0px 0px 0px 0px;
           }
         }
       
-        &--texth4 {
-          font-family: $font-family-base;
+        &--texth3 {
           color: $secondaryT-color;
-          background-color: unset;
-          padding: 0 40px 0 0;
-          margin: 0;
-          font-size: 20px;
-
+          font-size: 24px;
+          font-style: italic;
+          margin: 0px 0px 5px 10px;
           @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             font-size: 16px;
-            padding: 0 25px 0 0;
+            margin: 0px 0px 0px 5px;
           }
-            
           @media (max-width: $breakpoint-mobile) {
-            font-size: 12px;
-            padding: 0 15px 0 0;
+            font-size: 11px;
+            margin: 0px 0px 0px 0px;
           }
         }
-      
-      
-      
       }
     }
   }
