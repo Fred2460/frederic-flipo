@@ -31,6 +31,7 @@ root.render(
       <ScrollToTop />
       <Header />
       <Routes>
+        <Route path="/" element={<Accueil projets={projetsData} />} />
         <Route path="/Accueil" element={<Accueil projets={projetsData} />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/FProjet/c67ab8a7" element={<FProjet />} />
