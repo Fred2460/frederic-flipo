@@ -54,6 +54,15 @@
     "inlineCss": true,
     "puppeteerArgs": ["--no-sandbox"],
     "removeStyleTags": true,
-    "routes": ["/", "/APropos", "/FProjet/c67ab8a7", "/FProjet/b9123946", "/FProjet/46d188c5", "/FProjet/7af00cd6", "/FProjet/cb02d69b", "/FProjet/0979876d", "*"]
+    "routes": [
+      "/",
+      "/APropos",
+      "/FProjet/c67ab8a7",
+      "/FProjet/b9123946",
+      "/FProjet/46d188c5",
+      "/FProjet/7af00cd6",
+      "/FProjet/cb02d69b",
+      "/FProjet/0979876d",
+      "*"]
   }
 }
