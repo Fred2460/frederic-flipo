@@ -63,7 +63,7 @@
       "./FProjet/7af00cd6",
       "./FProjet/cb02d69b",
       "./FProjet/0979876d",
-      "*"
+      ".*"
       ]
   }
 }
