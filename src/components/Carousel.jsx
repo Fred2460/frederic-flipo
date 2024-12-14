@@ -28,7 +28,7 @@ function Carousel ({ pictures }) {
           >
             <IoChevronBackSharp className="carousel__previousButton--icone" /> {/* chevron précédent */}
           </button>
-          <img src={require(`../assets/${pictures[currentIndex]}`)} className="carousel__picture" alt={require(`../assets/${pictures[currentIndex]}`)} />
+          <img src={require(`../assets/${pictures[currentIndex]}`)} className="carousel__picture" alt="Carousel - screenshot projet" />
           <p className={ (pictures.length) > 1 ? "carousel__slideIndex--active" : "carousel__slideIndex--inactive"} >{currentIndex+1}/{pictures.length}</p>
           <button className={ (pictures.length) > 1 ? "carousel__nextButton--active" : "carousel__nextButton--inactive"} 
             onClick={nextImage} 

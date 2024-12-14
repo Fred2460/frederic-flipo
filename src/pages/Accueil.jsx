@@ -167,7 +167,7 @@ function Accueil({ projets }) {
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "2").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
-              <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.skill} className="skillsContainer__logo" />
+              <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.title} className="skillsContainer__logo" />
               <p className="skillsContainer__title">{skill.title}</p>
             </div>
           ))}
