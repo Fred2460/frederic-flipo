@@ -55,7 +55,7 @@
     "puppeteerArgs": ["--no-sandbox"],
     "removeStyleTags": true,
     "routes": [
-      "./",
+      "./Accueil",
       "./APropos",
       "./FProjet/c67ab8a7",
       "./FProjet/b9123946",
