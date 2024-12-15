@@ -9,8 +9,8 @@ const LocalData = () => {
     "name": "Frederic Flipo",
     "image": "./assets/image_github_ffl.png",
     "description": "Développeur freelance proposant des services de développement et d'optimisation de sites web",
-    "@id": "https://fred2460.github.io/frederic-flipo",
-    "url": "https://fred2460.github.io/frederic-flipo",
+    "@id": "https://frederic-flipo.net",
+    "url": "https://frederic-flipo.net",
     "telephone": "+33 6 82 86 01 60",
     "address": {
       "@type": "PostalAddress",
