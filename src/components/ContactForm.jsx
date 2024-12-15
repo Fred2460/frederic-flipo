@@ -10,7 +10,7 @@ function ContactForm() {
     event.preventDefault();
     const subject = "Demande de contact";
     const fullMessage = `${message}\n\nNom du contact : ${name}\nEmail de contact : ${email}`;
-    const mailtoLink = `mailto:contact@digitale-syntropie.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
+    const mailtoLink = `mailto:contact@frederic-flipo.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
     window.location.href = mailtoLink;
   };
 
