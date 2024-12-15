@@ -34,12 +34,7 @@ root.render(
         <Route path="/" element={<Accueil projets={projetsData} />} />
         <Route path="/Accueil" element={<Accueil projets={projetsData} />} />
         <Route path="/APropos" element={<APropos />} />
-        <Route path="/FProjet/c67ab8a7" element={<FProjet id="c67ab8a7" />} />
-        <Route path="/FProjet/b9123946" element={<FProjet id="b9123946" />} />
-        <Route path="/FProjet/46d188c5" element={<FProjet id="46d188c5" />} />
-        <Route path="/FProjet/7af00cd6" element={<FProjet id="7af00cd6" />} />
-        <Route path="/FProjet/cb02d69b" element={<FProjet id="cb02d69b" />} />
-        <Route path="/FProjet/0979876d" element={<FProjet id="0979876d" />} />
+        <Route path="/FProjet/:id" element={<FProjet />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
