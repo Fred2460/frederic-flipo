@@ -52,7 +52,9 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "puppeteerArgs": ["--no-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox"
+    ],
     "removeStyleTags": true,
     "routes": [
       "./",
@@ -65,6 +67,10 @@
       "./FProjet/cb02d69b",
       "./FProjet/0979876d",
       ".*"
-      ]
-  }
+    ]
+  },
+  "description": "Site web de Frederic FLIPO\r Développeur Web",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
