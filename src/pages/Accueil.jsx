@@ -80,11 +80,16 @@ function Accueil({ projets }) {
       <section className="block" id="services" aria-labelledby="section Services">
         <Element  name="services" className="block__title">Services</Element>          
         <div className="block__line"></div>
-        <p className="block__text" aria-label="Introduction Services">Développer les outils web nécessaires pour accélérer votre visibilité et vos activités en ligne.</p>
-        <p className="block__text" aria-label="Proposition Services">Je souhaite mettre à profit mon expérience professionnelle dans l’industrie et les services pour 
-          proposer des solutions adaptées et aider mes clients à se développer selon leurs besoins dans l’écosystème internet.</p>
-        <p className="block__text" aria-label="Types de Services">Développement web - Frontend | Backend | Bases de données | SEO & accessibilité</p>
-        <p className="block__text" aria-label="Modes de travail Services">Missions sous contrat ou freelance | Sous-traitance</p>
+        <h2 className="block__title--h2" aria-label="Introduction Services">
+          <span>Développer les outils web nécessaires pour accélérer votre visibilité et vos activités en ligne.</span><br />
+        </h2>
+        <p className="block__text" aria-label="Explications Services">
+          Je souhaite mettre à profit mon expérience professionnelle dans l’industrie et les services pour 
+          proposer des solutions adaptées et aider mes clients à se développer selon leurs besoins dans l’écosystème internet.<br />
+          <br />
+          Développement web - Frontend | Backend | Bases de données | SEO & accessibilité<br />
+          Missions sous contrat ou freelance | Sous-traitance
+        </p>
         <div className="services">
           <Block
             title="Augmentez votre visibilité"
