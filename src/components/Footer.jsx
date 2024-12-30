@@ -15,10 +15,8 @@ function Footer() {
         </section>
         <section className="footer__coord" aria-labelledby="Informations de contact">
           <ul className="footer__coord__contact">
-          	<li class="footer__coord__contact--title">Mes coordonnées</li>
-          	<li aria-label="Adresse - numéro et rue">27 rue Georges Clemenceau</li>
-            <li aria-label="Adresse - code postal, ville et pays">60750 Choisy-au-Bac, France</li>
-          	<li aria-label="Numéro de téléphone">Tel: +33 (0)6 82 86 01 66</li>
+          	<li class="footer__coord__contact--title">Ma localisation</li>
+            <li aria-label="code postal, ville et pays">60200 Compiègne, France</li>
           </ul>
           <ul className="footer__coord__contact">
           	<li class="footer__coord__contact--title">Horaires d'appel</li>

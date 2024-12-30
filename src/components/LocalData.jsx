@@ -8,21 +8,19 @@ const LocalData = () => {
     "@type": "LocalBusiness",
     "name": "Frederic Flipo",
     "image": "./assets/image_github_ffl.png",
-    "description": "Développeur freelance proposant des services de développement et d'optimisation de sites web",
+    "description": "Développeur full stack proposant des services de développement et d'optimisation de sites web",
     "@id": "https://frederic-flipo.net",
     "url": "https://frederic-flipo.net",
-    "telephone": "+33 6 82 86 01 60",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "27 rue Georges Clemenceau",
-      "addressLocality": "Choisy-au-Bac",
-      "postalCode": "60750",
+      "addressLocality": "Compiègne",
+      "postalCode": "60200",
       "addressCountry": "FR"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 49.43843,
-      "longitude": -2.87757
+      "latitude": 49.41765,
+      "longitude": 2.82660
     },
     "openingHours": "Mo-Fr 9:00-18:00"
   };
