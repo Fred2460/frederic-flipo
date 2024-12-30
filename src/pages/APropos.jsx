@@ -10,7 +10,7 @@ function APropos() {
       
       <div className="apropos" role="region" aria-labelledby="Présentation des expériences hors développement">
         <h1 className="block__title--h1">Présentation</h1>
-        <h2 className="block__title--h2">Un ingénieur senior devient... Développeur Web junior</h2>
+        <h2 className="block__title--h2">30 ans d’expérience dans l’industrie et les services</h2>
       </div>
 
       <div className="experiences" aria-label="Avantages de mon expérience hors développement">
