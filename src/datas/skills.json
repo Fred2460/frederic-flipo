@@ -82,5 +82,11 @@
         "title": "W3C WAI",
         "logo": "w3c_wai.png",
         "type": "2"
+    },
+    {
+       "id": "a1015",
+       "title": "CMS WordPress",
+       "logo": "wordpress.png",
+       "type": "2"
     }
 ]

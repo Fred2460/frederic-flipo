@@ -275,7 +275,15 @@
     box-shadow: 10px 5px 5px $blockB-color;
     border-radius: 5px;
     padding: 10px;
+    height: 474px;
     cursor: pointer;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      height: 378px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      height: 266px;
+    }
 
     &--icone {
       justify-content: start;
@@ -322,15 +330,17 @@
     &--text {
       font-size: 16px;
       color: $secondaryT-color;
-      margin-top: 5px;
-      margin-bottom: 10px;
+      margin-top: 10%;
+      margin-bottom: 5%;
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 14px;
-        margin-bottom: 7px;
+        margin-top: 7%;
+        margin-bottom: 4%;
       }
       @media (max-width: $breakpoint-mobile) {
         font-size: 12px;
-        margin-bottom: 4px;
+        margin-top: 4%;
+        margin-bottom: 2%;
       }
 
       &--B {
@@ -339,14 +349,14 @@
         font-weight: 700;
         text-align: center;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5%;
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
           font-size: 14px;
-          margin-bottom: 7px;
+          margin-bottom: 4%;
         }
         @media (max-width: $breakpoint-mobile) {
           font-size: 12px;
-          margin-bottom: 4px;
+          margin-bottom: 2%;
         }
       }
     }

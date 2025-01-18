@@ -1,4 +1,4 @@
-import pictureAccueil from '../assets/eberhard-grossgasteiger-e0M3I9vQ6hg-unsplash.jpg';
+import pictureAccueil from '../assets/nielsen-ramon-okvqMfl78YE-unsplash.jpg';
 import pictureProfile from '../assets/frederic_flipo_2023_n&b.jpg';
 import '../styles/main.scss';
 import Card from '../components/Card';
@@ -38,19 +38,19 @@ function Accueil({ projets }) {
 
       <Helmet>
         <html lang="fr" />
-        <title>Frédéric FLIPO - Développeur Web freelance</title>
-        <meta name="description" content="Page d'accueil du site de Frederic FLIPO, Développeur Web freelance." />
+        <title>Frédéric FLIPO - Développeur Web Full stack</title>
+        <meta name="description" content="Page d'accueil du site de Frederic FLIPO, Développeur Web Full stack." />
         <meta name="keywords" content="accueil, home, page principale" />
         <meta name="author" content="Frederic FLIPO" />
         <meta charset="UTF-8" />
         <meta name="language" content="fr-FR" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Frederic FLIPO - Développeur Web freelance" />
+        <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
         <meta property="og:url" content="https://frederic.flipo.github.io/" />
         <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
-        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web freelance" />
+        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta name="twitter:description" content="Créez de la valeur dans l'écosystème internet" />
         <meta name="twitter:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
         <meta name="twitter:url" content="https://frederic.flipo.github.io/" />
@@ -62,7 +62,7 @@ function Accueil({ projets }) {
         <Element name="homepage"></Element>
         <span className="welcome__block1"></span>
         <span className="welcome__block2"></span>
-        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" aria-label="Accueil - Image d'un paysage de montagne" />
+        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Bureau clavier et plantes dans un globe de verre" aria-label="Accueil - Image d'un bureau avec un clavier et des plantes dans un globe de verre" />
         <div className="welcome__container">
           <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
           <div className="welcome__container__ident">
@@ -87,7 +87,7 @@ function Accueil({ projets }) {
           Je souhaite mettre à profit mon expérience professionnelle dans l’industrie et les services pour 
           proposer des solutions adaptées et aider mes clients à se développer selon leurs besoins dans l’écosystème internet.<br />
           <br />
-          Développement web - Frontend | Backend | Bases de données | SEO & accessibilité<br />
+          Développement web - Frontend | Backend | Bases de données | SEO & Accessibilité<br />
           Missions sous contrat ou freelance | Sous-traitance
         </p>
         <div className="services">
