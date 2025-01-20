@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import "../styles/main.scss"
-import { GrCircleInformation } from "react-icons/gr"; // Information
+//import { GrCircleInformation } from "react-icons/gr"; // Information
 
 
 function Block ({ title, tech, icone, text1, text2 }) {
