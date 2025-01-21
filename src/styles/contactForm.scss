@@ -31,9 +31,11 @@
         &--submit {
           background-color: $blockB-color;
           color:$blockT-color;
+          font-weight: bold;
           border: 1px solid $blockB-color;
           padding: 10px;
           font-size: 14px;
+          border-radius: 4px;
           cursor: pointer;
           width: 100%;
         }

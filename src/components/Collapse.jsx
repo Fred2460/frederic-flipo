@@ -13,8 +13,8 @@ function Collapse ({ title, children }) {
     return (
         <div className="collapse">
             <div className="collapseHeader" onClick={toggleCollapse}>
-                <h2 className="collapseHeader__title">{title}</h2>
                 <span className="collapseHeader__chevron" aria-expanded={isOpen} aria-controls="Contenu détaillé">{isOpen ? <IoChevronDown /> : <IoChevronUp />}</span>
+                <h2 className="collapseHeader__title">{title}</h2>
             </div>
             {isOpen && <div className="collapseHeader__content">{children}</div>}
         </div>

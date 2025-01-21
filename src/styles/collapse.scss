@@ -5,7 +5,9 @@
 .collapseHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  //justify-content: space-between;
+  justify-content: start;
+  gap: 15px;
   align-items: center;
   color: $blockT-color;
   background: $blockB-color;
@@ -31,6 +33,10 @@
     }
   }
   
+  &__title:hover {
+    color: $linkHover-color;
+  }
+
   &__chevron {
     font-size: 35px;
     color: $blockT-color;
@@ -46,6 +52,11 @@
       margin-top: 5px;
     }
   }
+
+  &__chevron:hover {
+    color: $linkHover-color;
+  }
+
   &__content {
     //min-height: 280px;
     text-align: left;

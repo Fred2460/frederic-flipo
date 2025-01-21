@@ -10,9 +10,7 @@
 
     &__picture {
         width: 100%;
-        //width: 70vw;
         height: auto;
-        //height: 50vh;
         border-radius: 25px;
         object-fit: contain;
         border-top: 1px solid $tertiaryB-color;
@@ -37,6 +35,10 @@
             width: 24px;
             padding: 5px;
         }
+    }
+
+    &__previousButton--active:hover, &__nextButton--active:hover {
+        color: $linkHover-color;
     }
 
     &__previousButton--active {
