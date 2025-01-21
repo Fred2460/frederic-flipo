@@ -15,11 +15,11 @@ function Footer() {
         </section>
         <section className="footer__coord" aria-labelledby="Informations de contact">
           <ul className="footer__coord__contact">
-          	<li class="footer__coord__contact--title">Ma localisation</li>
+          	<li className="footer__coord__contact--title">Ma localisation</li>
             <li aria-label="code postal, ville et pays">60200 Compiègne, France</li>
           </ul>
           <ul className="footer__coord__contact">
-          	<li class="footer__coord__contact--title">Horaires d'appel</li>
+          	<li className="footer__coord__contact--title">Horaires d'appel</li>
           	<li aria-label="Horaires d'appel">du lundi au vendredi de 10h à 19h</li>
           </ul>
         </section>
