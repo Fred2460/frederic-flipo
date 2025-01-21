@@ -88,5 +88,11 @@
        "title": "CMS WordPress",
        "logo": "wordpress.png",
        "type": "2"
+    },
+    {
+      "id": "a1016",
+      "title": "CMS Squarespace",
+      "logo": "squarespace.png",
+      "type": "2"
     }
 ]
