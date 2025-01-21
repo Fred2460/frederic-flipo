@@ -68,10 +68,13 @@ function Accueil({ projets }) {
           <div className="welcome__container__ident">
             <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" aria-label="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
-                <h2 className="welcome__container__ident--sub--texth2">Frédéric FLIPO</h2>  
-                <h3 className="welcome__container__ident--sub--texth3">Développeur Web</h3>
+              <h2 className="welcome__container__ident--sub--texth2">Frédéric FLIPO</h2>  
+              <h3 className="welcome__container__ident--sub--texth3">Développeur Web</h3>
             </div>
-          </div>         
+          </div>
+          <div className="welcome__container--slogan">
+            <h2>Développer les outils web pour accélérer votre visibilité et vos activités en ligne.</h2>
+          </div>
         </div>
 
       </section>
@@ -80,14 +83,11 @@ function Accueil({ projets }) {
       <section className="block" id="services" aria-labelledby="section Services">
         <Element  name="services" className="block__title">Services</Element>          
         <div className="block__line"></div>
-        <h2 className="block__title--h2" aria-label="Introduction Services">
-          <span>Développer les outils web nécessaires pour accélérer votre visibilité et vos activités en ligne.</span><br />
-        </h2>
         <p className="block__text" aria-label="Explications Services">
-          Je souhaite mettre à profit mon expérience professionnelle dans l’industrie et les services pour 
-          proposer des solutions adaptées et aider mes clients à se développer selon leurs besoins dans l’écosystème internet.<br />
+          Mettre à profit mon expérience professionnelle dans l’industrie et les services pour proposer des solutions
+           adaptées.<br />Aider mes clients à se développer selon leurs besoins dans l’écosystème internet.<br />
           <br />
-          Développement web - Frontend | Backend | Bases de données | SEO & Accessibilité<br />
+          Développement web - Frontend | Backend | Bases de données | SEO | Accessibilité<br />
           Missions sous contrat ou freelance | Sous-traitance
         </p>
         <div className="services">
@@ -119,7 +119,7 @@ function Accueil({ projets }) {
             title="Améliorez l'expérience des utilisateurs locaux"
             tech="SEO local"
             icone={<BsGeoAltFill aria-label="Icône représentant la position sur une carte" />}
-            text1="Optimisez votre visibilité locale avec Goocle Business Profile (anc. Google My Business), intégrez vos microdonnées et structurez les."
+            text1="Optimisez votre visibilité locale avec Google Business Profile (anc. Google My Business), intégrez vos microdonnées et structurez les."
             text2="Soyez facile à trouver dans votre zone géographique!"
           />
 
