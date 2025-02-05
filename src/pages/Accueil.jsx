@@ -48,13 +48,13 @@ function Accueil({ projets }) {
         <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
         <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
-        <meta property="og:url" content="https://frederic.flipo.github.io/" />
+        <meta property="og:image" content="https://github.com/Fred2460/frederic-flipo/blob/main/src/assets/image_github_ffl.png" />
+        <meta property="og:url" content="https://frederic-flipo.net" />
         <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
         <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta name="twitter:description" content="Créez de la valeur dans l'écosystème internet" />
-        <meta name="twitter:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
-        <meta name="twitter:url" content="https://frederic.flipo.github.io/" />
+        <meta name="twitter:image" content="https://github.com/Fred2460/frederic-flipo/blob/main/src/assets/image_github_ffl.pngg" />
+        <meta name="twitter:url" content="https://frederic-flipo.net/" />
         <LocalData />
       </Helmet>
 
