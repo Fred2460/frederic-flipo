@@ -13,14 +13,16 @@ const LocalData = () => {
     "url": "https://frederic-flipo.net",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Compiègne",
-      "postalCode": "60200",
+      "streetAddress": "148 rue Georges Clemenceau",
+      "addressLocality": "Choisy-au-Bac",
+      "postalCode": "60750",
       "addressCountry": "FR"
     },
+    "telephone": "+33 7 68 62 94 89",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 49.41765,
-      "longitude": 2.82660
+      "latitude": 49.43937,
+      "longitude": 2.87826
     },
     "openingHours": "Mo-Fr 9:00-18:00"
   };

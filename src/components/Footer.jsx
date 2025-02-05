@@ -16,11 +16,13 @@ function Footer() {
         <section className="footer__coord" aria-labelledby="Informations de contact">
           <ul className="footer__coord__contact">
           	<li className="footer__coord__contact--title">Ma localisation</li>
-            <li aria-label="code postal, ville et pays">60200 Compiègne, France</li>
+            <li aria-label="code postal, ville et pays">60750 Choisy-au-Bac, France</li>
+            <li>Proximité de Compiègne</li>
           </ul>
           <ul className="footer__coord__contact">
           	<li className="footer__coord__contact--title">Horaires d'appel</li>
           	<li aria-label="Horaires d'appel">du lundi au vendredi de 10h à 19h</li>
+            <li aria-label="Telephone">+33 7 68 62 94 89</li>
           </ul>
         </section>
         <p aria-label="Propriétaire du site">© 2024 Frederic FLIPO. Tous droits réservés</p>
