@@ -45,6 +45,7 @@ function Accueil({ projets }) {
         <meta charset="UTF-8" />
         <meta name="language" content="fr-FR" />
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
         <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
