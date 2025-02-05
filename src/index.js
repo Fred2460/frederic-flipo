@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from "react-helmet-async";
 import Accueil from './pages/Accueil'
 import APropos from './pages/APropos'
 import FProjet from './pages/FProjet'
@@ -25,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <HelmetProvider>
     <Router>
       <GlobalStyle />
       <ScrollToTop />
@@ -39,5 +40,10 @@ root.render(
       </Routes>
       <Footer />
     </Router>
-  </React.StrictMode>
+  </HelmetProvider>
 );
+
+/*
+<React.StrictMode>
+</React.StrictMode>
+*/
