@@ -39,6 +39,9 @@ function FProjet() {
               </p>
             ))}
           </div>
+          <a href={projet.lien.startsWith('http') ? projet.lien : `https://${projet.lien}`} className='identification__lien' target="_blank" rel="noopener noreferrer" aria-label="Lien vers projet">
+            {projet.lien}
+          </a>
         </div>
       </div>
 

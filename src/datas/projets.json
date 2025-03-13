@@ -159,5 +159,71 @@
 			"Notion©"
 		],
 		"lien": ""
+	},
+	{
+		"id": "0973246a",
+		"title": "Refonte site vitrine de l'entreprise de coaching 'BUTTERFLY Solutions' et SEO",
+		"cover": "bs_accueil_global.png",
+		"pictures": [
+			"bs_accueil_global.png",
+			"bs_accueil_fra.png",
+			"bs_accueil_esp_fhc.png",
+			"bs_accueil_fra_publi.png",
+			"bs_accueil_fra_temoi.png",
+			"bs_accueil_fra_accomp.png",
+			"bs_accomp_eng.png",
+			"bs_accueil_fra_contact.png"
+		],
+		"description": "Accompagner la refonte du site web, développer les fonctions d'expertise et améliorer le référencement naturel pour les moteurs de recherche",
+		"theme": "Refonte de site web, multilangue, accompagnement et SEO",
+		"equipments": [
+			"Migrer l'ancien site vers la dernière version Squarespace",
+			"Paramétrer le site selon les nouveaux choix de design",
+			"Développer les fonctions d'expertise CSS pour obtenir des rendus spécifiques",
+			"Gérer le Responsive pour un rendu optimisé pour ordinateur et téléphone mobile",
+			"Optimiser le référencement naturel avec les outils spécialisés pour le SEO",
+			"Accompagner le client dans sa montée en compétence de Squarespace"
+		],
+		"tags": [
+			"CMS Squarespace",
+			"Design",
+			"Responsive",
+			"SEO",
+			"Accompagnement"
+		],
+		"lien": "https://www.butterfly-solutions.eu"
+	},
+	{
+		"id": "0263246b",
+		"title": "Création site vitrine multilangue de la startup 'ANACAM Agency', développement Responsive, SEO",
+		"cover": "anacam_fra_accueil2.png",
+		"pictures": [
+			"anacam_fra_accueil2.png",
+			"anacam_fra_services.png",
+			"anacam_fra_manifesto.png",
+			"anacam_esp_manifesto.png",
+			"anacam_fra_team.png",
+			"anacam_esp_contact.png",
+			"anacam_fra_mob.png"
+		],
+		"description": "Création du site vitrine multilangue, développement Responsive pour ordinateurs, tablettes et téléphones, optimisation du référencement naturel pour les moteurs de recherche",
+		"theme": "Création site vitrine, sur-mesure, multilangue, accompagnement et SEO",
+		"equipments": [
+			"Installer l'hébergement et acheter le nom de domaine",
+			"Créer le site avec la gestion multilangue",
+			"Développer les fonctions d'expertise CSS pour obtenir des rendus spécifiques",
+			"Gérer le Responsive pour un rendu optimisé pour ordinateur, tablette et téléphone mobile",
+			"Optimiser le référencement naturel avec les outils spécialisés pour le SEO",
+			"Mettre en place les outils de sécurité"
+		],
+		"tags": [
+			"CMS WordPress",
+			"Design",
+			"SEO",
+			"Hébergement",
+			"Nom de domaine",
+			"Sécurité"
+		],
+		"lien": "https://www.anacamagency.com"
 	}
 ]

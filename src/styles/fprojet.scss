@@ -28,23 +28,15 @@
 /* ---------------------------- TITRE ET INFORMATIONS GENERALES --------------- */
 .infoBlock {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: start;
     margin-top: 5px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-        flex-direction: column;
-
-    }
-    @media (max-width: $breakpoint-mobile) {
-        flex-direction: column;
-    }
 }
 
 .identification {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 
     &__title {
         font-size: 32px;
@@ -59,8 +51,7 @@
     }
 
     &__theme {
-        flex-direction: row;
-        justify-content: start;
+        margin: 0;
         font-size: 24px;
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             font-size: 16px;
@@ -68,6 +59,24 @@
         @media (max-width: $breakpoint-mobile) {
             font-size: 14px;
         }
+    }
+
+    &__lien {
+        flex-direction: row;
+        justify-content: start;
+        font-size: 16px;
+        color: $secondaryT-color;
+        margin-bottom: 10px;
+        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 14px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 12px;
+        }
+    }
+
+    &__lien:hover {
+        color: $linkHover-color;
     }
 
     &__tags {
@@ -92,7 +101,9 @@
             background: $blockB-color;
             color: $blockT-color;
             border-radius: 10px;
-            padding: 3px 22px 3px 22px; 
+            padding: 3px 22px 3px 22px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
     }
 }
