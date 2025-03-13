@@ -5,13 +5,22 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [rgpd, setRgpd] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const subject = "Demande de contact";
-    const fullMessage = `${message}\n\nNom du contact : ${name}\nEmail de contact : ${email}`;
+    const fullMessage = `${message}\n\nNom du contact : ${name}\nEmail de contact : ${email}\nFormulaire de contact soumis avec consentement RGPD.`;
     const mailtoLink = `mailto:contact@frederic-flipo.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
-    window.location.href = mailtoLink;
+    const newWindow = window.open(mailtoLink, '_blank');
+    if (!newWindow) {
+      alert("Veuillez autoriser les pop-ups pour ouvrir le lien de messagerie.");
+    } else {
+      setName('');
+      setEmail('');
+      setMessage('');
+      setRgpd(false);
+    }
   };
 
   return (
@@ -57,6 +66,21 @@ function ContactForm() {
           required
           aria-required="true"
         />
+      </div>
+      <div>
+        <label htmlFor="rgpd" className="formContact__field--check">
+          <p><strong>Accord RGPD :</strong></p>
+          <input
+            id="rgpd"
+            type="checkbox"
+            name="rgpd"
+            checked={rgpd}
+            onChange={(e) => setRgpd(e.target.value)}
+            required
+            aria-required="true"
+          />
+          J’accepte que le site stocke les informations envoyées pour me répondre &#40;promis, je ne les revends pas et je n’enverrai pas 3 newsletters par jour&nbsp;!&#41;
+        </label>
       </div>
       <input type="hidden" name="subject" value="Demande de contact" />
       <input className="formContact__field--submit" type="submit" value="Envoyer votre message" />

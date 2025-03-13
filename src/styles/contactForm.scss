@@ -27,13 +27,27 @@
         border-radius: 4px;
         font-family: $font-family-base;
         font-size: 14px;
-        
+
+        &--check {
+          margin-bottom: 0;
+          margin-top: 0;
+          font-size: 14px;
+          text-align: left;
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 12px;
+          }
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 10px;
+          }
+        }
+
         &--submit {
           background-color: $blockB-color;
           color:$blockT-color;
           font-weight: bold;
           border: 1px solid $blockB-color;
           padding: 10px;
+          margin-top: 20px;
           font-size: 14px;
           border-radius: 4px;
           cursor: pointer;

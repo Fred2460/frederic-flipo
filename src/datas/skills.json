@@ -19,62 +19,62 @@
     },
     {
         "id": "a1004",
-        "title": "Node.js",
-        "logo": "node-js.png",
-        "type": "1"
-    },
-    {
-        "id": "a1005",
-        "title": "express.js",
-        "logo": "express.png",
-        "type": "1"
-    },
-    {
-        "id": "a1006",
-        "title": "API REST",
-        "logo": "api_rest.png",
-        "type": "1"
-    },
-    {
-        "id": "a1007",
         "title": "React",
         "logo": "react.png",
         "type": "1"
     },
     {
-        "id": "a1008",
+        "id": "a1005",
         "title": "Sass",
         "logo": "sass.png",
         "type": "1"
     },
     {
+        "id": "a1006",
+        "title": "Node.js",
+        "logo": "node-js.png",
+        "type": "1"
+    },
+    {
+        "id": "a1007",
+        "title": "express.js",
+        "logo": "express.png",
+        "type": "1"
+    },
+    {
+        "id": "a1008",
+        "title": "API REST",
+        "logo": "api_rest.png",
+        "type": "1"
+    },
+    {
         "id": "a1009",
+        "title": "php",
+        "logo": "php.png",
+        "type": "1"
+    },
+    {
+        "id": "a1010",
+        "title": "MySQL",
+        "logo": "mysql.png",
+        "type": "1"
+    },
+    {
+        "id": "a1011",
+        "title": "MongoDB",
+        "logo": "mongodb.png",
+        "type": "1"
+    },
+    {
+        "id": "a1012",
         "title": "Git",
         "logo": "git.png",
         "type": "2"
     },
     {
-        "id": "a1010",
+        "id": "a1013",
         "title": "GitHub",
         "logo": "github.png",
-        "type": "2"
-    },
-    {
-        "id": "a1011",
-        "title": "Google Lighthouse",
-        "logo": "lighthouse.png",
-        "type": "2"
-    },
-    {
-        "id": "a1012",
-        "title": "axe DevTools",
-        "logo": "axe_devtools.png",
-        "type": "2"
-    },
-    {
-        "id": "a1013",
-        "title": "Schema.org",
-        "logo": "schema_org.png",
         "type": "2"
     },
     {
@@ -84,15 +84,39 @@
         "type": "2"
     },
     {
-       "id": "a1015",
-       "title": "CMS WordPress",
-       "logo": "wordpress.png",
-       "type": "2"
+        "id": "a1015",
+        "title": "Google Lighthouse",
+        "logo": "lighthouse.png",
+        "type": "2"
     },
     {
-      "id": "a1016",
-      "title": "CMS Squarespace",
-      "logo": "squarespace.png",
-      "type": "2"
+        "id": "a1016",
+        "title": "axe DevTools",
+        "logo": "axe_devtools.png",
+        "type": "2"
+    },
+    {
+        "id": "a1017",
+        "title": "Schema.org",
+        "logo": "schema_org.png",
+        "type": "2"
+    },
+    {
+        "id": "a1018",
+        "title": "CMS WordPress",
+        "logo": "wordpress.png",
+        "type": "2"
+    },
+    {
+        "id": "a1019",
+        "title": "CMS WooCommerce",
+        "logo": "woocommerce.png",
+        "type": "2"
+    },
+    {
+        "id": "a1020",
+        "title": "CMS Squarespace",
+        "logo": "squarespace.png",
+        "type": "2"
     }
 ]
