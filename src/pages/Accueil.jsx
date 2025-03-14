@@ -122,7 +122,7 @@ function Accueil({ projets }) {
             tech="Front-end"
             icone={<MdOutlineScreenSearchDesktop aria-label="Icône représentant la visibilité sur internet" />}
             text1="Vous souhaitez attirer plus de clients, vous rendre visible sur internet? La solution est simple: créez votre propre site vitrine." 
-            text2="Intégrez les technologies récentes et favorisez la conception Responsive!"
+            text2="Intégrez les technologies récentes et favorisez la conception Responsive&nbsp;!"
           />
 
           <Block 
@@ -130,7 +130,7 @@ function Accueil({ projets }) {
             tech="Back-end"
             icone={<FaUserGear aria-label="Icône représentant un processus utilisateur" />}
             text1="Vous souhaitez fidéliser vos prospects et clients, donner à votre entreprise une image professionnelle?" 
-            text2="Ajoutez des fonctionnalités intelligentes."
+            text2="Ajoutez des fonctionnalités intelligentes&nbsp;!"
           />
 
           <Block 
@@ -138,7 +138,7 @@ function Accueil({ projets }) {
             tech="SEO"
             icone={<MdVisibility aria-label="Icône représentant la visibilité par un oeil" />}
             text1="Améliorez le référencement naturel de votre site, sa performance, optimisez son contenu, intégrez le référencement local." 
-            text2="Devenez visible sur les moteurs de recherche!"
+            text2="Devenez visible sur les moteurs de recherche&nbsp;!"
           />
 
           <Block 
@@ -146,15 +146,15 @@ function Accueil({ projets }) {
             tech="SEO local"
             icone={<BsGeoAltFill aria-label="Icône représentant la position sur une carte" />}
             text1="Optimisez votre visibilité locale avec Google Business Profile (anc. Google My Business), intégrez vos microdonnées et structurez les."
-            text2="Soyez facile à trouver dans votre zone géographique!"
+            text2="Soyez facile à trouver dans votre zone géographique&nbsp;!"
           />
 
           <Block
-            title="Soyez plus inclusifs pour le handicap"
+            title="Soyez plus inclusifs"
             tech="Accessibilité"
             icone={<MdOutlineAccessibleForward aria-label="Icône représentant l'accessibilité" />}
             text1="Rendez votre site web utilisable par le plus grand nombre, y compris les personnes ayant des handicaps."
-            text2="Aidez-les à Percevoir, Comprendre, Naviguer et Interagir de manière efficace!"
+            text2="Aidez-les à Percevoir, Comprendre, Naviguer et Interagir de manière efficace&nbsp;!"
           />
 
           <Block 
@@ -162,7 +162,7 @@ function Accueil({ projets }) {
             tech="Appelez un freelance"
             icone={<SiFreelancer aria-label="Icône représentant la flexibilité" />}
             text1="Pour mettre en oeuvre vos projets, il vous manque des compétences ou simplement des ressources. Renforcez votre équipe selon vos besoins."
-            text2="Gagnez en rapidité et en flexibilité!"
+            text2="Gagnez en rapidité et en flexibilité&nbsp;!"
           />
 
         </div>
@@ -212,7 +212,7 @@ function Accueil({ projets }) {
 
       {/* section Contact */}
       <section className="block" id="contact" aria-labelledby="Section de contact">
-        <Element  name="contact" className="block__title">Vous voulez discuter d'un projet ou juste faire connaissance ?</Element>
+        <Element  name="contact" className="block__title">Vous avez une question ou un projet&nbsp;?</Element>
         <div className="block__line"></div>
         <ContactForm role="form" aria-describedby="Formulaire de contact"/>
       </section>

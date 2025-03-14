@@ -49,14 +49,14 @@
           padding: 10px;
           margin-top: 20px;
           font-size: 14px;
-          border-radius: 4px;
+          border-radius: 5px;
           cursor: pointer;
           width: 100%;
+          transition: background-color 0.3s ease-in-out;
         }
 
         &--submit:hover {
-          color: $linkHover-color;
-          opacity: 0.9;
+          background-color: $linkHover-color;
         }
     }
 }
