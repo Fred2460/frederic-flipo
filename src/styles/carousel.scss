@@ -6,10 +6,11 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 60vw;
+    height: 60vh;
 
     &__picture {
-        width: 100%;
+        width: 100%;    
         height: auto;
         border-radius: 25px;
         object-fit: contain;
@@ -66,7 +67,7 @@
     }
 
     &__previousButton--icone, &__nextButton--icone {
-        font-size: 5vw;
+        font-size: 2vw;
         background-color: $blockB-color;
         opacity: 0.4;
         border-radius: 5px;

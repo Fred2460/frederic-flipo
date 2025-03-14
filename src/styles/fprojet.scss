@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    height: 40vw;
+    /*height: 40vw;*/
 }
 
 /* ---------------------------- TITRE ET INFORMATIONS GENERALES --------------- */
@@ -39,20 +39,20 @@
     gap: 15px;
 
     &__title {
-        font-size: 32px;
+        font-size: 26px;
         color: $primaryT-color;
         margin: 0;
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            font-size: 26px;
+            font-size: 22px;
         }
         @media (max-width: $breakpoint-mobile) {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 
     &__theme {
         margin: 0;
-        font-size: 24px;
+        font-size: 20px;
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             font-size: 16px;
         }
