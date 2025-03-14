@@ -1,24 +1,26 @@
 @import 'variables';
 
 .footer {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: $blockT-color;
   background-color: $blockB-color;
   font-size: 16px;
   font-weight: 500;
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media (max-width: $breakpoint-mobile) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   p {
-    font-weight: 700;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   &__logos {
@@ -47,28 +49,22 @@
     display: flex;
     align-items: baseline;
     gap: 80px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-      gap: 50px;
-    }
-    @media (max-width: $breakpoint-mobile) {
-      gap: 20px;
-    }
 
     &__contact {
       font-size: 16px;
       list-style: none;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
       margin-bottom: 0;
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 14px;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      @media (max-width: $breakpoint-mobile) {
-        font-size: 10px;
         padding-left: 10px;
         padding-right: 10px;
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
       &--title {
