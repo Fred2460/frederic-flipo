@@ -189,7 +189,7 @@ function Accueil({ projets }) {
       <section className="block" id="competences" aria-labelledby="section Compétences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
-        <p className="block__text" aria-label="Langages de développement">Développement</p>
+        <p className="block__text" aria-label="Langages de développement et bases de données">Développement et Bases de données</p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "1").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -199,7 +199,7 @@ function Accueil({ projets }) {
           ))}
         </div>
         <div className="block__line"></div>
-        <p className="block__text" aria-label="Outils et SEO">Outils et SEO</p>
+        <p className="block__text" aria-label="SEO et accessibilité">SEO et Accessibilité</p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "2").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -208,6 +208,16 @@ function Accueil({ projets }) {
             </div>
           ))}
         </div>
+        <div className="block__line"></div>
+          <p className="block__text" aria-label="Outils">Outils et CMS</p>
+          <div className="skillsContainer">
+            {skillData.filter(skill => skill.type === "3").map(skill => (
+              <div key={skill.id} className="skillsContainer__item">
+                <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.title} className="skillsContainer__logo" />
+                <p className="skillsContainer__title">{skill.title}</p>
+              </div>
+            ))}
+          </div>
       </section>
 
       {/* section Contact */}

@@ -69,22 +69,28 @@
         "id": "a1012",
         "title": "Git",
         "logo": "git.png",
-        "type": "2"
+        "type": "3"
     },
     {
         "id": "a1013",
         "title": "GitHub",
         "logo": "github.png",
-        "type": "2"
+        "type": "3"
     },
     {
         "id": "a1014",
+        "title": "Google Analytics",
+        "logo": "google_analytics.png",
+        "type": "2"
+    },
+    {
+        "id": "a1015",
         "title": "W3C WAI",
         "logo": "w3c_wai.png",
         "type": "2"
     },
     {
-        "id": "a1015",
+        "id": "b1015",
         "title": "Google Lighthouse",
         "logo": "lighthouse.png",
         "type": "2"
@@ -105,18 +111,18 @@
         "id": "a1018",
         "title": "CMS WordPress",
         "logo": "wordpress.png",
-        "type": "2"
+        "type": "3"
     },
     {
         "id": "a1019",
         "title": "CMS WooCommerce",
         "logo": "woocommerce.png",
-        "type": "2"
+        "type": "3"
     },
     {
         "id": "a1020",
         "title": "CMS Squarespace",
         "logo": "squarespace.png",
-        "type": "2"
+        "type": "3"
     }
 ]

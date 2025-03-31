@@ -20,7 +20,7 @@ function Footer() {
         <ul className="footer__coord__contact">
         	<li className="footer__coord__contact--title">Ma localisation</li>
           <li aria-label="code postal, ville et pays">60750 Choisy-au-Bac, France</li>
-          <li>Proximité de Compiègne</li>
+          <li>Proximité de Compiègne (60 - Oise)</li>
         </ul>
         <ul className="footer__coord__contact">
         	<li className="footer__coord__contact--title">Horaires d'appel</li>
