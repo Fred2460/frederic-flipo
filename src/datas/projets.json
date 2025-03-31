@@ -194,6 +194,40 @@
 		"lien": "https://www.butterfly-solutions.eu"
 	},
 	{
+		"id": "0973246b",
+		"title": "Refonte site vitrine de l'écolodge 'BUTTERFLY Shelter' et SEO",
+		"cover": "bsh-accueil_fra.png",
+		"pictures": [
+			"bsh-accueil_fra.png",
+			"bsh_services_fra.png",
+			"bsh_shelters_eng.png",
+			"bsh_reset-life_fra.png",
+			"bsh_reset-life-trainings_eng.png",
+			"bsh_place.png",
+			"bsh_newsletter_fra.png",
+			"bsh_enquiry-fra.png",
+			"bsh_footer.png"
+		],
+		"description": "Accompagner la refonte du site web, ajouter le multilangue, développer les fonctions d'expertise et améliorer le référencement naturel pour les moteurs de recherche",
+		"theme": "Refonte de site web, multilangue, accompagnement et SEO",
+		"equipments": [
+			"Paramétrer le site selon les nouveaux choix de design",
+			"Réorganiser la structure des pages du site selon la nouvelle approche marketing",
+			"Développer les fonctions d'expertise CSS pour obtenir des rendus spécifiques",
+			"Gérer le Responsive pour un rendu optimisé pour ordinateur et téléphone mobile",
+			"Optimiser le référencement naturel avec les outils spécialisés pour le SEO",
+			"Accompagner le client dans sa montée en compétence de Squarespace"
+		],
+		"tags": [
+			"CMS Squarespace",
+			"Design",
+			"Responsive",
+			"SEO",
+			"Accompagnement"
+		],
+		"lien": "https://www.butterfly-shelter.com"
+	},
+	{
 		"id": "0263246b",
 		"title": "Création site vitrine multilangue de la startup 'ANACAM Agency' et SEO",
 		"cover": "anacam_fra_accueil2.png",
