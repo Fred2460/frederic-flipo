@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 import skillData from '../datas/skills.json'
 import ContactForm from '../components/ContactForm';
 import { Helmet } from 'react-helmet-async';
+import TypewriterEffect from '../components/TypewriterEffect'; // Effet Typewriter pour texte
 
 // Icônes Services
 import { MdOutlineScreenSearchDesktop } from "react-icons/md"; // Visibilité Front-end
@@ -38,8 +39,8 @@ function Accueil({ projets }) {
     "name": "Frederic Flipo",
     "image": "./assets/image_github_ffl.png",
     "description": "Développeur full stack proposant des services de développement et d'optimisation de sites web",
-    "@id": "https://frederic-flipo.net",
-    "url": "https://frederic-flipo.net",
+    "@id": "https://www.frederic-flipo.net",
+    "url": "https://www.frederic-flipo.net",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "148 rue Georges Clemenceau",
@@ -56,6 +57,11 @@ function Accueil({ projets }) {
     "openingHours": "Mo-Fr 9:00-18:00"
   };
 
+  const siteUrl = 'https://www.frederic-flipo.net';
+  const imageUrl = `${siteUrl}/src/assets/image_github_ffl.png`;
+
+  const monTitreH1 = "Créez de la valeur dans l'écosystème internet";
+
   return (
     <div className="main">
 
@@ -71,13 +77,13 @@ function Accueil({ projets }) {
         <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
         <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://github.com/Fred2460/frederic-flipo/blob/main/src/assets/image_github_ffl.png" />
-        <meta property="og:url" content="https://frederic-flipo.net" />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={siteUrl} />
         <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
         <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack" />
-        <meta name="twitter:description" content="Créez de la valeur dans l'écosystème internet" />
-        <meta name="twitter:image" content="https://github.com/Fred2460/frederic-flipo/blob/main/src/assets/image_github_ffl.pngg" />
-        <meta name="twitter:url" content="https://frederic-flipo.net/" />
+        <meta name="twitter:description" content={monTitreH1} />
+        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:url" content={siteUrl} />
         <script type="application/ld+json">
           {JSON.stringify(jsonLdData)}
         </script>
@@ -90,11 +96,18 @@ function Accueil({ projets }) {
         <span className="welcome__block2"></span>
         <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Bureau clavier et plantes dans un globe de verre" aria-label="Accueil - Image d'un bureau avec un clavier et des plantes dans un globe de verre" />
         <div className="welcome__container">
-          <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
+          <TypewriterEffect text={monTitreH1} speed={80}>
+            {(monTitreH1, cursor) => (
+              <h1 className="welcome__container--banner">
+                {monTitreH1}
+                {cursor}
+              </h1>
+            )}
+          </TypewriterEffect>
           <div className="welcome__container__ident">
             <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" aria-label="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
-              <h2 className="welcome__container__ident--sub--texth2">Frédéric FLIPO</h2>  
+              <h2 className="welcome__container__ident--sub--texth2">Frédéric FLIPO</h2>
               <h3 className="welcome__container__ident--sub--texth3">Développeur Web</h3>
             </div>
           </div>
@@ -232,3 +245,9 @@ function Accueil({ projets }) {
 }
 
 export default Accueil
+
+/*
+<h1 className="welcome__container--banner">
+  <TypewriterEffect texte={monTitreH1} />
+</h1>
+*/
