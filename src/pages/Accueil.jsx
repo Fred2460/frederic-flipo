@@ -97,7 +97,7 @@ function Accueil({ projets }) {
         <span className="welcome__block2"></span>
         <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Bureau clavier et plantes dans un globe de verre" aria-label="Accueil - Image d'un bureau avec un clavier et des plantes dans un globe de verre" />
         <div className="welcome__container">
-          <TypewriterEffect text={monTitreH1} speed={80}>
+          <TypewriterEffect text={monTitreH1} speed={60}>
             {(monTitreH1, cursor) => (
               <h1 className="welcome__container--banner">
                 {monTitreH1}
@@ -203,7 +203,7 @@ function Accueil({ projets }) {
       <section className="block" id="competences" aria-labelledby="section Compétences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
-        <p className="block__text" aria-label="Langages de développement et bases de données">Développement et Bases de données</p>
+        <p className="block__text" aria-label="Langages de développement et bases de données"><strong>Développement et Bases de données</strong></p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "1").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -213,7 +213,7 @@ function Accueil({ projets }) {
           ))}
         </div>
         <div className="block__line"></div>
-        <p className="block__text" aria-label="SEO et accessibilité">SEO et Accessibilité</p>
+        <p className="block__text" aria-label="SEO et accessibilité"><strong>SEO et Accessibilité</strong></p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "2").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -223,7 +223,7 @@ function Accueil({ projets }) {
           ))}
         </div>
         <div className="block__line"></div>
-          <p className="block__text" aria-label="Outils">Outils et CMS</p>
+          <p className="block__text" aria-label="Outils"><strong>Outils et CMS</strong></p>
           <div className="skillsContainer">
             {skillData.filter(skill => skill.type === "3").map(skill => (
               <div key={skill.id} className="skillsContainer__item">
