@@ -1,5 +1,5 @@
 import pictureAccueil from '../assets/nielsen-ramon-okvqMfl78YE-unsplash.jpg';
-import pictureProfile from '../assets/frederic_flipo_coul.jpg';
+import pictureProfile from '../assets/frederic_flipo_coul.png';
 import '../styles/main.scss';
 import Card from '../components/Card';
 import Block from '../components/Block';
