@@ -84,6 +84,7 @@ function Accueil({ projets }) {
         <meta name="twitter:description" content={monTitreH1} />
         <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:url" content={siteUrl} />
+        <link rel="canonical" href={siteUrl} />
         <script type="application/ld+json">
           {JSON.stringify(jsonLdData)}
         </script>
@@ -245,9 +246,3 @@ function Accueil({ projets }) {
 }
 
 export default Accueil
-
-/*
-<h1 className="welcome__container--banner">
-  <TypewriterEffect texte={monTitreH1} />
-</h1>
-*/
