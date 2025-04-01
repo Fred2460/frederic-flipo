@@ -344,6 +344,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
+    justify-content: space-between;
     background-color: $primaryB-color;
     box-shadow: 10px 5px 5px $blockB-color;
     border-radius: 5px;
@@ -366,7 +367,7 @@
       font-size: 22px;
       color: $primaryT-color;
       margin-top: 0;
-      margin-bottom: 10px;
+      text-align: center;
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
         font-size: 18px;
       }
@@ -403,7 +404,7 @@
       margin-left: 15%;
       margin-right: 15%;
       margin-top: 5%;
-      margin-bottom: 10px;
+      margin-bottom: 5%;
       padding: 5px;
       cursor: pointer;
       @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
