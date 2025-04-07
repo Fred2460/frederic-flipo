@@ -25,12 +25,30 @@ function Accueil({ projets }) {
   const location = useLocation();
 
   useEffect(() => {
+    // Gestion des redirections
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+
+    // Code Google Analytics
+    const loadGoogleAnalytics = () => {
+      // Création du premier script (gtag.js)
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-9Q5V0LEXTF";
+      document.head.appendChild(gtagScript);
+
+      // Création du second script (configuration)
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9Q5V0LEXTF');
+    };
+
+    loadGoogleAnalytics();
   }, [location]);
 
   const jsonLdData = {
@@ -38,7 +56,7 @@ function Accueil({ projets }) {
     "@type": "LocalBusiness",
     "name": "Frederic Flipo",
     "image": "./assets/image_github_ffl.png",
-    "description": "Développeur full stack proposant des services de développement et d'optimisation de sites web",
+    "description": "Développeur full stack proposant des services de développement et d'optimisation de sites web - Oise Compiègne",
     "@id": "https://www.frederic-flipo.net",
     "url": "https://www.frederic-flipo.net",
     "address": {
@@ -67,7 +85,7 @@ function Accueil({ projets }) {
 
       <Helmet>
         <html lang="fr" />
-        <title>Frédéric FLIPO - Développeur Web Full stack</title>
+        <title>Frédéric FLIPO - Développeur Web Full stack - Oise Compiègne</title>
         <meta name="description" content="Page d'accueil du site de Frederic FLIPO, Développeur Web Full stack." />
         <meta name="keywords" content="accueil, home, page principale" />
         <meta name="author" content="Frederic FLIPO" />
@@ -75,12 +93,12 @@ function Accueil({ projets }) {
         <meta name="language" content="fr-FR" />
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
-        <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack" />
+        <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack - Oise Compiègne" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
-        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack" />
+        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack - Oise Compiègne" />
         <meta name="twitter:description" content={monTitreH1} />
         <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:url" content={siteUrl} />
