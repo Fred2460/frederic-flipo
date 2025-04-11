@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.frederic-flipo.net/</loc>
+    <priority>1</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/apropos</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/booki</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/sophie-bluel</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/nina-carducci</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/kasa-immobilier</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/vieux-grimoire</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/menu-maker</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/butterfly-solutions</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/butterfly-shelter</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.frederic-flipo.net/projets/anacam-agency</loc>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

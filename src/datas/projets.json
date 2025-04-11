@@ -1,6 +1,6 @@
 [
 	{
-		"id": "c67ab8a7",
+		"id": "booki",
 		"title": "Interface de l’agence de voyage Booki",
 		"cover": "booki_cover.png",
 		"pictures": [
@@ -21,10 +21,11 @@
 			"CSS",
 			"Figma"
 		],
-		"lien": "https://github.com/Fred2460/OC_Projet2_Agence-Booki.git"
+		"lien": "https://github.com/Fred2460/OC_Projet2_Agence-Booki.git",
+		"priority": 0.8
 	},
 	{
-		"id": "b9123946",
+		"id": "sophie-bluel",
 		"title": "Page web pour l’architecte Sophie Bluel",
 		"cover": "bluel_cover.png",
 		"pictures": [
@@ -48,10 +49,11 @@
 			"Javascript",
 			"Figma"
 		],
-		"lien": "https://github.com/Fred2460/OC_Projet3_Architecte-Sophie-Bluel.git"
+		"lien": "https://github.com/Fred2460/OC_Projet3_Architecte-Sophie-Bluel.git",
+		"priority": 0.8
 	},
 	{
-		"id": "46d188c5",
+		"id": "nina-carducci",
 		"title": "Optimisation du site du photographe N.Carducci",
 		"cover": "nina_cover.png",
 		"pictures": [
@@ -76,10 +78,11 @@
 			"axe DevTools",
 			"Schema.org"
 		],
-		"lien": "https://github.com/Fred2460/OC_Projet4_Nina-Carducci.git"
+		"lien": "https://github.com/Fred2460/OC_Projet4_Nina-Carducci.git",
+		"priority": 0.8
 	},
 	{
-		"id": "7af00cd6",
+		"id": "kasa-immobilier",
 		"title": "Agence de location immobilière Kasa",
 		"cover": "kasa_cover.png",
 		"pictures": [
@@ -101,10 +104,11 @@
 			"Node.js",
 			"données JSON"
 		],
-		"lien": "https://github.com/Fred2460/OC_Projet5_Kasa.git"
+		"lien": "https://github.com/Fred2460/OC_Projet5_Kasa.git",
+		"priority": 0.8
 	},
 	{
-		"id": "cb02d69b",
+		"id": "vieux-grimoire",
 		"title": "Site de notation de livres Vieux Grimoire",
 		"cover": "vieux-grimoire_cover.png",
 		"pictures": [
@@ -130,10 +134,11 @@
 			"Architecture MVC",
 			"API RESTful"
 		],
-		"lien": "https://github.com/Fred2460/OC_Projet6_Vieux-Grimoire.git"
+		"lien": "https://github.com/Fred2460/OC_Projet6_Vieux-Grimoire.git",
+		"priority": 0.8
 	},
 	{
-		"id": "0979876d",
+		"id": "menu-maker",
 		"title": "Organisation projet de développement web Menu Maker",
 		"cover": "menu_maker_cover.png",
 		"pictures": [
@@ -158,10 +163,11 @@
 			"Kanban",
 			"Notion©"
 		],
-		"lien": ""
+		"lien": "",
+		"priority": 0.8
 	},
 	{
-		"id": "0973246a",
+		"id": "butterfly-solutions",
 		"title": "Refonte site vitrine de l'entreprise de coaching 'BUTTERFLY Solutions' et SEO",
 		"cover": "bs_accueil_global.png",
 		"pictures": [
@@ -191,10 +197,11 @@
 			"SEO",
 			"Accompagnement"
 		],
-		"lien": "https://www.butterfly-solutions.eu"
+		"lien": "https://www.butterfly-solutions.eu",
+		"priority": 0.9
 	},
 	{
-		"id": "0973246b",
+		"id": "butterfly-shelter",
 		"title": "Refonte site vitrine de l'écolodge 'BUTTERFLY Shelter' et SEO",
 		"cover": "bsh-accueil_fra.png",
 		"pictures": [
@@ -225,10 +232,11 @@
 			"SEO",
 			"Accompagnement"
 		],
-		"lien": "https://www.butterfly-shelter.com"
+		"lien": "https://www.butterfly-shelter.com",
+		"priority": 0.9
 	},
 	{
-		"id": "0263246b",
+		"id": "anacam-agency",
 		"title": "Création site vitrine multilangue de la startup 'ANACAM Agency' et SEO",
 		"cover": "anacam_fra_accueil2.png",
 		"pictures": [
@@ -258,6 +266,7 @@
 			"Nom de domaine",
 			"Sécurité"
 		],
-		"lien": "https://www.anacamagency.com"
+		"lien": "https://www.anacamagency.com",
+		"priority": 0.9
 	}
 ]

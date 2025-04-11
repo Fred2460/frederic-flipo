@@ -85,24 +85,27 @@ function Accueil({ projets }) {
 
       <Helmet>
         <html lang="fr" />
-        <title>Frédéric FLIPO - Développeur Web Full stack - Oise Compiègne</title>
-        <meta name="description" content="Page d'accueil du site de Frederic FLIPO, Développeur Web Full stack." />
-        <meta name="keywords" content="accueil, home, page principale" />
+        <title>Accueil | Frédéric FLIPO - Développeur Web Compiègne</title>
+        <meta name="description" content="Frederic FLIPO, Développeur Web Full stack à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
+        <meta name="keywords" content="développement web, seo, wordpress, compiègne, internet, freelance" />
         <meta name="author" content="Frederic FLIPO" />
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="language" content="fr-FR" />
         <meta name="robots" content="index, follow" />
+        <meta http-equiv="content-language" content="fr" />
+        <link rel="canonical" href="https://www.frederic-flipo.net/" />
         <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
-        <meta property="og:title" content="Frederic FLIPO - Développeur Web Full stack - Oise Compiègne" />
+        <meta property="og:title" content="Accueil | Frédéric FLIPO - Développeur Web Compiègne" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
-        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web Full stack - Oise Compiègne" />
-        <meta name="twitter:description" content={monTitreH1} />
+        <meta property="og:description" content="Frederic FLIPO, Développeur Web à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:title" content="Accueil | Frédéric FLIPO - Développeur Web Compiègne" />
+        <meta name="twitter:description" content="Frederic FLIPO, Développeur Web à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
         <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:url" content={siteUrl} />
-        <link rel="canonical" href={siteUrl} />
         <script type="application/ld+json">
           {JSON.stringify(jsonLdData)}
         </script>

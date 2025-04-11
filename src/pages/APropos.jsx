@@ -2,12 +2,41 @@ import '../styles/main.scss'
 import Collapse from '../components/Collapse'
 import { HiArrowNarrowRight } from "react-icons/hi"
 import { PiArrowCircleRightFill } from "react-icons/pi"
+import { Helmet } from 'react-helmet-async';
 
 function APropos() {
+
+  const siteUrl = 'https://www.frederic-flipo.net';
+  const imageUrl = `${siteUrl}/src/assets/image_github_ffl.png`;
 
   return (
     <div className="main">
       
+      <Helmet>
+        <html lang="fr" />
+        <title>A propos | Frédéric FLIPO - Développeur Web Compiègne</title>
+        <meta name="description" content="Frederic FLIPO, Développeur Web Full stack à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
+        <meta name="keywords" content="développement web, seo, wordpress, compiègne, internet, freelance" />
+        <meta name="author" content="Frederic FLIPO" />
+        <meta charset="UTF-8" />
+        <link rel="canonical" href="https://www.frederic-flipo.net/apropos/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="language" content="fr-FR" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="content-language" content="fr" /> 
+        <meta name="google-site-verification" content="0CpWD0nludtP2a36pEpdceG12jDFnbffZmN6cZ_ZWVk" /> {/* Google Search Console */}
+        <meta property="og:title" content="A propos | Frédéric FLIPO - Développeur Web Compiègne" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:description" content="Frederic FLIPO, Développeur Web à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:title" content="A propos | Frédéric FLIPO - Développeur Web Compiègne" />
+        <meta name="twitter:description" content="Frederic FLIPO, Développeur Web à Compiègne. Freelance, je développe vos sites web avec WordPress ou autres CMS. J'apporte aussi mes expertises aux entreprises" />
+        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:url" content={siteUrl} />
+      </Helmet>
+
       <div className="apropos" role="region" aria-labelledby="Présentation des expériences hors développement">
         <h1 className="block__title--h1">Présentation</h1>
         <h2 className="block__title--h2">30 ans d’expérience dans l’industrie et les services</h2>
