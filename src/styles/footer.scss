@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as v;
 
 .footer {
   padding: 20px 0;
@@ -6,14 +6,14 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: $blockT-color;
-  background-color: $blockB-color;
+  color: v.$blockT-color;
+  background-color: v.$blockB-color;
   font-size: 16px;
   font-weight: 500;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     font-size: 16px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     font-size: 14px;
   }
 
@@ -28,19 +28,19 @@
     flex-direction: row;
     font-size: 30px;
     gap: 20px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 24px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 20px;
     }
 
     a {
-      color: $blockT-color;
+      color: v.$blockT-color;
     }
 
     a:hover {
-      color: $linkHover-color;
+      color: v.$linkHover-color;
       opacity: 0.7;
     }
   }
@@ -56,12 +56,12 @@
       padding-left: 20px;
       padding-right: 20px;
       margin-bottom: 0;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 14px;
         padding-left: 10px;
         padding-right: 10px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 12px;
         padding-left: 5px;
         padding-right: 5px;

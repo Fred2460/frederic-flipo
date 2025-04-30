@@ -12,12 +12,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
-    "react-icons": "^5.4.0",
-    "react-router-dom": "^7.0.2",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.3",
     "react-scripts": "5.0.1",
-    "react-scroll": "^1.9.0",
+    "react-scroll": "^1.9.3",
     "scss-loader": "^0.0.1",
-    "styled-components": "^6.1.13",
+    "styled-components": "^6.1.17",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,8 +47,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0",
-    "sass": "^1.85.1",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.87.0",
     "sitemap": "^8.0.0"
   },
   "description": "Site web de Frederic FLIPO\r Développeur Web",

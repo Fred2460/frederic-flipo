@@ -1,6 +1,6 @@
 /* ****************** Style pour les pages ACCUEIL, A-PROPOS, ERREUR et composants BLOCK ********************** */
 
-@import 'variables';
+@use 'variables' as v;
 
 .main {
   display: flex;
@@ -8,13 +8,13 @@
   margin-top: 76px;
   margin-bottom: 50px;
   gap: 50px;
-  font-family: $font-family-base;
-  background-color: $primaryB-color;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  font-family: v.$font-family-base;
+  background-color: v.$primaryB-color;
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     gap: 35px;
     margin-top: 58px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     gap: 25px;
     margin-top: 34px;
   }
@@ -26,14 +26,14 @@
 .block {
   margin: 0px 100px 0px 100px;
   text-align: center;
-  background-color: $secondaryB-color;
+  background-color: v.$secondaryB-color;
   padding: 60px 30px 30px 30px;
   border-radius: 5px;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     margin: 0px 50px 0px 50px;
     padding: 50px 24px 24px 24px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     margin: 0px 20px 0px 20px;
     padding: 40px 20px 20px 20px;
   }
@@ -45,13 +45,13 @@
     margin-top: 40px;
     margin-bottom: 40px;
     font-weight: 500;
-    color: $secondaryT-color;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    color: v.$secondaryT-color;
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 30px;
       margin-top: 32px;
       margin-bottom: 32px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 20px;
       margin-top: 26px;
       margin-bottom: 26px;
@@ -62,12 +62,12 @@
       letter-spacing: 10px;
       font-size: 46px;
       font-weight: 700;
-      color: $secondaryT-color;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      color: v.$secondaryT-color;
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         letter-spacing: 8px;
         font-size: 36px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         letter-spacing: 5px;
         font-size: 24px;
       }
@@ -79,12 +79,12 @@
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 0;
-      color: $secondaryT-color;
+      color: v.$secondaryT-color;
       text-align: center;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 18px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 12px;
       }
     }
@@ -94,27 +94,27 @@
     width: 55px;
     height: 1px;
     margin: 30px auto;
-    background: $secondaryT-color;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    background: v.$secondaryT-color;
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       width: 44px;
       margin: 24px auto;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       width: 35px;
       margin: 18px auto;
     }
   }
 
   &__text {
-    font-family: $font-family-base;
-    color: $secondaryT-color;
-    background-color: $secondaryB-color;
+    font-family: v.$font-family-base;
+    color: v.$secondaryT-color;
+    background-color: v.$secondaryB-color;
     border-radius: 5px;
     font-size: 25px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 20px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 15px;
     }
   }
@@ -151,11 +151,11 @@
   margin: 0px 100px 0px 0px;
   padding-top: 76px;
   display: flex;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     margin: 0px 50px 0px 0px;
     padding-top: 58px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     margin: 0px 20px 0px 0px;
     padding-top: 8px;
     flex-direction: column;
@@ -165,9 +165,9 @@
     width: 20vw;
     height: 20vw;
     aspect-ratio: 1 / 1;
-    background-color: $tertiaryB-color;
+    background-color: v.$tertiaryB-color;
     z-index: 0;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       width: 100vw;
       height: 10vw;
     }
@@ -176,14 +176,14 @@
   &__block2 {
     width: 75vw;
     height: 45vw;
-    background-color: $secondaryB-color;
+    background-color: v.$secondaryB-color;
     margin-left: 40px;
     border-radius: 0 5px 5px 5px;
     z-index: 1;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       margin-left: 30px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       margin-left: 20px;
       display: none;
     }
@@ -199,11 +199,11 @@
     z-index: 2;
     box-shadow: 5px 5px 8px rgba(108, 88, 76, 0.5);
     animation: kenburns-top 4s ease-out both;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       top: 178px;
       left: 50px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       position: relative;
       top: -5vw;
       left: 40vw;
@@ -221,10 +221,10 @@
     width: 65vw;
     height: 40vw;
     z-index: 3;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       padding-right: 3%;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       position: relative;
       width: 80vw;
       height: auto;
@@ -235,14 +235,14 @@
     }
 
     &--banner {
-      color: $secondaryT-color;
+      color: v.$secondaryT-color;
       font-size: 50px;
       margin-bottom: 10%;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 30px;
         margin-bottom: 5%;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 30px;
         margin-top: 0;
         margin-bottom: 10px;
@@ -268,17 +268,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: $primaryT-color;
+        color: v.$primaryT-color;
 
         &--texth2 {
           font-size: 30px;
           letter-spacing: 2px;
           margin: 5px 0px 0px 15px;
-          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 20px;
             margin: 3px 0px 0px 8px;
           }
-          @media (max-width: $breakpoint-mobile) {
+          @media (max-width: v.$breakpoint-mobile) {
             font-size: 20px;
             margin: 0px 0px 0px 0px;
           }
@@ -288,11 +288,11 @@
           font-size: 24px;
           font-style: italic;
           margin: 0px 0px 5px 10px;
-          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 16px;
             margin: 0px 0px 0px 5px;
           }
-          @media (max-width: $breakpoint-mobile) {
+          @media (max-width: v.$breakpoint-mobile) {
             font-size: 15px;
             margin: 0px 0px 0px 0px;
           }
@@ -301,15 +301,15 @@
     }
 
     &--slogan {
-      color: $secondaryT-color;
+      color: v.$secondaryT-color;
       font-size: 15px;
-      text-shadow: 2px 2px 1px $secondaryB-color;
+      text-shadow: 2px 2px 1px v.$secondaryB-color;
       text-transform: uppercase;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 10px;
-        text-shadow: 1px 1px 1px $secondaryB-color;
+        text-shadow: 1px 1px 1px v.$secondaryB-color;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 12px;
         text-transform: none;
         text-shadow: none;;
@@ -329,12 +329,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 40px;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 25px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 10px;
@@ -345,57 +345,57 @@
     flex-direction: column;
     text-align: start;
     justify-content: space-between;
-    background-color: $primaryB-color;
-    box-shadow: 10px 5px 5px $blockB-color;
+    background-color: v.$primaryB-color;
+    box-shadow: 10px 5px 5px v.$blockB-color;
     border-radius: 5px;
     padding: 10px;
 
     &--icone {
       justify-content: start;
       font-size: 50px;
-      color: $blockB-color;
+      color: v.$blockB-color;
       padding-left: 10px;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 40px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 32px;
       }
     }
 
     &--title {
       font-size: 22px;
-      color: $primaryT-color;
+      color: v.$primaryT-color;
       margin-top: 0;
       text-align: center;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 18px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 16px;
       }
     }
     
     &--texth4 {
       font-size: 20px;
-      color: $secondaryB-color;
-      background-color: $blockB-color;
+      color: v.$secondaryB-color;
+      background-color: v.$blockB-color;
       opacity: 0.9;
       margin: 5px 0 5px 0;
       border-radius: 5px;
       padding: 5px;
       text-align: center;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 16px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 13px;
       }
     }
     
     &--button {
-      color: $secondaryT-color;
-      font-family: $font-family-base;
+      color: v.$secondaryT-color;
+      font-family: v.$font-family-base;
       font-size: 16px;
       font-weight: 400;
       text-align: center;
@@ -407,18 +407,18 @@
       margin-bottom: 5%;
       padding: 5px;
       cursor: pointer;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 14px;
         margin-bottom: 7px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 12px;
         margin-bottom: 5px;
       }
     }
 
     &--button:hover {
-      color: $linkHover-color;
+      color: v.$linkHover-color;
     }
   }
 }
@@ -479,7 +479,7 @@
 
   &__content {
     position: relative;
-    background: $primaryB-color;
+    background: v.$primaryB-color;
     padding: 20px;
     border-radius: 5px;
     width: 90%;
@@ -487,24 +487,24 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       max-width: 300px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       max-width: 220px;
     }
 
     &--icone {
       font-size: 50px;
-      color: $linkHover-color;
+      color: v.$linkHover-color;
       text-align: left;
       margin-left: 20px;
       margin-bottom: 5px;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 40px;
         margin-left: 15px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 32px;
         margin-left: 10px;
       }
@@ -512,31 +512,31 @@
 
     &--title {
       font-size: 22px;
-      color: $primaryT-color;
+      color: v.$primaryT-color;
       margin-top: 0;
       margin-bottom: 10px;
       font-weight: bold;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 18px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 16px;
       }
     }
 
     &--tech {
       font-size: 20px;
-      color: $secondaryB-color;
-      background-color: $blockB-color;
+      color: v.$secondaryB-color;
+      background-color: v.$blockB-color;
       opacity: 0.9;
       margin: 5px 0 5px 0;
       border-radius: 5px;
       padding: 5px;
       margin-bottom: 10px;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 16px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 13px;
       }
     }
@@ -545,11 +545,11 @@
       font-size: 16px;
       line-height: 1.5;
       margin-bottom: 10px;
-      color: $secondaryT-color;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      color: v.$secondaryT-color;
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 14px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 12px;
       }
     }
@@ -557,11 +557,11 @@
     &--slogan {
       font-size: 18px;
       font-weight: bold;
-      color: $linkHover-color;
-      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      color: v.$linkHover-color;
+      @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         font-size: 16px;
       }
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         font-size: 14px;
       }
     }
@@ -574,7 +574,7 @@
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: $secondaryT-color;
+    color: v.$secondaryT-color;
     cursor: pointer;
   }
 }
@@ -587,14 +587,14 @@
   gap: 30px;
   padding: 40px;
   border-radius: 25px;
-  background-color: $secondaryB-color;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  background-color: v.$secondaryB-color;
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 25px;
     margin-top: 30px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     padding: 15px;
@@ -611,12 +611,12 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid $blockB-color;
+    border: 2px solid v.$blockB-color;
     gap: 5px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       aspect-ratio: 2 / 3;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       aspect-ratio: 1 / 1;
     }
 
@@ -631,8 +631,8 @@
       &--title {
         align-items: center;
         justify-content: center;
-        color: $blockT-color;
-        background-color: $blockB-color;
+        color: v.$blockT-color;
+        background-color: v.$blockB-color;
         opacity: 0.9;
         border-radius: 4px 4px 0 0;
         font-size: 18px;
@@ -642,16 +642,16 @@
         padding: 5px 5px 10px 5px;
         text-align: center;
         z-index: 2;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
           font-size: 14px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
           font-size: 10px;
         }
       }
 
       &--title:hover {
-        color: $linkHover-color;
+        color: v.$linkHover-color;
       }
 
       &--cover {
@@ -676,18 +676,18 @@
 
         &--tags {
           display: inline-flex;
-          color: $blockT-color;
-          background-color: $blockB-color;
+          color: v.$blockT-color;
+          background-color: v.$blockB-color;
           border-radius: 15px;
           padding: 5px 10px;
           font-size: 12px;
           font-weight: 500;
           list-style: none;
           z-index: 3;
-          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 10px;
           }
-          @media (max-width: $breakpoint-mobile) {
+          @media (max-width: v.$breakpoint-mobile) {
             font-size: 8px;
           }
         }
@@ -716,11 +716,11 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       width: 60px;
       height: 60px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       width: 45px;
       height: 45px;
     }
@@ -732,14 +732,14 @@
 
   &__title {
     margin: 10px;
-    color: $secondaryT-color;
+    color: v.$secondaryT-color;
     font-size: 16px;
     font-weight: 700;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 14px;
       margin: 8px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 12px;
       margin: 5px;
     }
@@ -786,11 +786,11 @@
     justify-content: center;
     margin: 10px 100px 40px 100px;
     gap: 30px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       margin: 0px 40px 20px 40px;
       gap: 30px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       margin: 0px 20px 0px 20px;
       gap: 25px;
     }
@@ -800,13 +800,13 @@
 
 .errorMain {
   align-items: center;
-  color: $primaryT-color;
+  color: v.$primaryT-color;
   margin: 50px;
   gap: 90px;
-  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
     gap: 70px;
   }
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: v.$breakpoint-mobile) {
     gap: 50px ;
   }
 
@@ -815,10 +815,10 @@
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 192px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 96px ;
     }
   }
@@ -827,10 +827,10 @@
     font-size: 36px;
     font-weight: 500;
     text-align: center;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 24px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 18px ;
     }
   }
@@ -838,13 +838,13 @@
   &__Link {
     font-size: 18px;
     font-weight: 500;
-    color: $secondaryT-color;
+    color: v.$secondaryT-color;
     text-decoration: underline;
     margin-bottom: 50px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
       font-size: 16px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 14px ;
     }
   }

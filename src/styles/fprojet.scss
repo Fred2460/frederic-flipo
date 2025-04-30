@@ -1,17 +1,17 @@
 /* ****************** Style pour la page FICHE PROJET ********************** */
 
-@import 'variables';
+@use 'variables' as v;
 
 .info {
     display: flex;
     flex-direction: column;
-    font-family: $font-family-base;
+    font-family: v.$font-family-base;
     font-weight: 500;
     margin: 76px 100px 30px 100px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         margin: 60px 50px 15px 50px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
         margin: 45px 20px 10px 20px;
     }
 }
@@ -41,12 +41,12 @@
 
     &__title {
         font-size: 26px;
-        color: $primaryT-color;
+        color: v.$primaryT-color;
         margin: 0;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 22px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             font-size: 16px;
         }
     }
@@ -54,10 +54,10 @@
     &__theme {
         margin: 0;
         font-size: 20px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 16px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             font-size: 14px;
         }
     }
@@ -66,18 +66,18 @@
         flex-direction: row;
         justify-content: start;
         font-size: 16px;
-        color: $secondaryT-color;
+        color: v.$secondaryT-color;
         margin-bottom: 10px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 14px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             font-size: 12px;
         }
     }
 
     &__lien:hover {
-        color: $linkHover-color;
+        color: v.$linkHover-color;
     }
 
     &__tags {
@@ -85,11 +85,11 @@
         flex-direction: row;
         justify-content: start;
         gap: 10px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             flex-wrap: wrap;
             row-gap: 0;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             flex-wrap: wrap;
             row-gap: 0;
         }
@@ -99,8 +99,8 @@
             font-size: 14px;
             font-weight: 700;
             text-align: center;
-            background: $blockB-color;
-            color: $blockT-color;
+            background: v.$blockB-color;
+            color: v.$blockT-color;
             border-radius: 10px;
             padding: 3px 22px 3px 22px;
             margin-top: 5px;
@@ -116,14 +116,14 @@
     align-items: flex-end;
     width: 20%;
     gap: 30px;
-    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         margin-bottom: 10px;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
@@ -139,7 +139,7 @@
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
         flex-direction: column;
         margin-bottom: 0;
     }
@@ -147,7 +147,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             margin-bottom: 25px;
         }
 
@@ -156,8 +156,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            color: $blockT-color;
-            background: $blockB-color;
+            color: v.$blockT-color;
+            background: v.$blockB-color;
             padding: 5px 20px;
             border-radius: 10px;
             font-size: 18px;
@@ -165,45 +165,45 @@
             border: none;
             z-index: 1;
             position: relative;
-            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
                 font-size: 16px;
             }
-            @media (max-width: $breakpoint-mobile) {
+            @media (max-width: v.$breakpoint-mobile) {
                 font-size: 13px;
             }
 
             &--chevron {
                 font-size: 35px;
-                color: $blockT-color;
+                color: v.$blockT-color;
                 padding: 0;
                 background: none;
                 border: none;
-                @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+                @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
                     font-size: 30px;
-                    color: $blockT-color;
+                    color: v.$blockT-color;
                 }
-                @media (max-width: $breakpoint-mobile) {
+                @media (max-width: v.$breakpoint-mobile) {
                     font-size: 23px;
-                    color: $blockT-color;
+                    color: v.$blockT-color;
                 }
             }
         }
 
         &--description {
             min-height: 280px;
-            color: $secondaryT-color;
+            color: v.$secondaryT-color;
             font-weight: 400;
             padding: 30px 20px 20px 20px;
-            background-color: $secondaryB-color;
+            background-color: v.$secondaryB-color;
             margin-top: -10px;
             border-radius: 5px;
             z-index: 0;
             position: relative;
-            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
                 font-size: 14px;
                 padding: 25px 15px 15px 15px;
             }
-            @media (max-width: $breakpoint-mobile) {
+            @media (max-width: v.$breakpoint-mobile) {
                 font-size: 12px;
                 padding: 20px 10px 10px 10px;
                 min-height: auto;
@@ -214,16 +214,16 @@
             list-style: inside;
             min-height: 280px;
             padding: 30px 20px 20px 20px;
-            background-color: $secondaryB-color;
+            background-color: v.$secondaryB-color;
             margin-top: -10px;
             border-radius: 5px;
             z-index: 0;
             position: relative;
-            @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
                 font-size: 14px;
                 padding: 25px 15px 15px 15px;
             }
-            @media (max-width: $breakpoint-mobile) {
+            @media (max-width: v.$breakpoint-mobile) {
                 font-size: 12px;
                 padding: 20px 10px 10px 10px;
                 min-height: auto;

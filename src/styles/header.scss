@@ -1,11 +1,11 @@
-@import 'variables';
+@use 'variables' as v;
 
 .navCont {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $primaryB-color;
+  background-color: v.$primaryB-color;
   padding-right: 1rem;
   display: flex;
   justify-content: end;
@@ -19,25 +19,25 @@
     border: none;
     cursor: pointer;
     font-size: 2rem;
-    color: $blockB-color;
+    color: v.$blockB-color;
 
     &:hover {
-      color: $linkHover-color;
+      color: v.$linkHover-color;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       display: block; // Affiché sur mobile
     }
   }
 
   &__block {
     display: flex;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       position: absolute;
       top: 60px;
       right: -50%;
       width: 50%;
-      background-color: $primaryB-color;
+      background-color: v.$primaryB-color;
       flex-direction: column;
       align-items: end;
       padding: 0 1rem 0 0;
@@ -48,7 +48,7 @@
       visibility: hidden;
     }
 
-    @media (min-width: $breakpoint-mobile) {
+    @media (min-width: v.$breakpoint-mobile) {
       display: flex !important; // Toujours affiché sur desktop
       position: static;
       flex-direction: row;
@@ -59,7 +59,7 @@
     }
     
     &--open {
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
@@ -68,7 +68,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-mobile) {
+  @media (min-width: v.$breakpoint-mobile) {
     &__block {
       display: flex !important; // Toujours affiché sur desktop
       position: static;
@@ -82,33 +82,33 @@
 
   &__block--link {
     text-decoration: none;
-    color: $secondaryT-color;
+    color: v.$secondaryT-color;
     font-size: 1rem;
     padding: 2rem 1rem;
     transition: color 0.3s ease-in-out;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       padding: 1rem 1rem;
     }
 
     &:hover {
-      background-color: $secondaryB-color;
-      color: $linkHover-color;
+      background-color: v.$secondaryB-color;
+      color: v.$linkHover-color;
     }
   }
 
   &__block--linkB {
     text-decoration: none;
-    background-color: $blockB-color;
-    color: $blockT-color;
+    background-color: v.$blockB-color;
+    color: v.$blockT-color;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       margin-bottom: 1rem;
     }
 
     &:hover {
-      background-color: $linkHover-color;
+      background-color: v.$linkHover-color;
     }
   }
 }

@@ -1,6 +1,6 @@
 /* ---------------------------- Style pour le composant CARROUSEL ---------------------------- */
 
-@import 'variables';
+@use 'variables' as v;
 
 .carousel {
     position: relative;
@@ -14,50 +14,50 @@
         height: auto;
         border-radius: 25px;
         object-fit: contain;
-        border-top: 1px solid $tertiaryB-color;
-        border-bottom: 1px solid $tertiaryB-color;
+        border-top: 1px solid v.$tertiaryB-color;
+        border-bottom: 1px solid v.$tertiaryB-color;
     }
 
     &__previousButton--active, &__nextButton--active {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        color: $blockT-color;
+        color: v.$blockT-color;
         width: 100px;
         background-color: unset;
         border: none;
         padding: 20px;
         cursor: pointer;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             width: 60px;
             padding: 10px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             width: 24px;
             padding: 5px;
         }
     }
 
     &__previousButton--active:hover, &__nextButton--active:hover {
-        color: $linkHover-color;
+        color: v.$linkHover-color;
     }
 
     &__previousButton--active {
         left: -20px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             left: -17px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             left: -5px;
         }
     }
       
     &__nextButton--active {
         right: -20px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             right: -10px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             right: 0px;
         }
     }
@@ -68,7 +68,7 @@
 
     &__previousButton--icone, &__nextButton--icone {
         font-size: 3vw;
-        background-color: $blockB-color;
+        background-color: v.$blockB-color;
         opacity: 0.4;
         border-radius: 5px;
     }
@@ -78,18 +78,18 @@
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
-        color: $blockT-color;
+        color: v.$blockT-color;
         font-size: 16px;
         font-weight: 500;
-        background-color: $blockB-color;
+        background-color: v.$blockB-color;
         opacity: 0.4;
         padding: 5px 10px 5px 10px;
         border-radius: 5px;
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        @media(min-width: v.$breakpoint-mobile) and (max-width: v.$breakpoint-desktop) {
             font-size: 14px;
             padding: 4px 8px 4px 8px;
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: v.$breakpoint-mobile) {
             font-size: 11px;
             padding: 3px 5px 3px 5px;
         }
